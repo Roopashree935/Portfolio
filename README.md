@@ -2,14 +2,26 @@
 
 ![Banner](https://drive.google.com/uc?export=view&id=1DtZYd5LI9G4vgndyqDQxKWKiuyXB3bbj)
 
-# Kartik H.
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00c8b4&center=true&vCenter=true&width=700&lines=Clinical+Systems+Translator;M.Pharm+(Pharmacy+Practice);HEOR+%26+Evidence+Generation;Vernacular+AI+Architect" alt="Typing SVG" />
+</a>
 
-### B.Pharm · Health-Tech AI Specialist · EdTech Founder · Vernacular AI · Medical Content
+### M.Pharm (Pharmacy Practice) Scholar · RIPER · HEOR & Real-World Evidence · Digital Health Systems
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-portfolio.techstudyhubcore.in-00c8b4?style=flat-square&logo=google-chrome&logoColor=white)](https://portfolio.techstudyhubcore.in)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Kartik%20H.-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/kartik-h6)
-[![Email](https://img.shields.io/badge/Email-kartik.h6822@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:kartik.h6822@gmail.com)
-[![Location](https://img.shields.io/badge/Location-Koppal%2C%20Karnataka%2C%20IN-FF6B35?style=flat-square&logo=googlemaps&logoColor=white)](https://maps.google.com/?q=Koppal,Karnataka)
+<p align="center">
+  <a href="https://portfolio.techstudyhubcore.in" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-portfolio.techstudyhubcore.in-00c8b4?style=flat-square&logo=google-chrome&logoColor=white" alt="Portfolio">
+  </a>
+  <a href="https://linkedin.com/in/kartik-h6" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Kartik%20H.-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="mailto:kartik.h6822@gmail.com">
+    <img src="https://img.shields.io/badge/Email-kartik.h6822@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email">
+  </a>
+  <a href="https://maps.google.com/?q=Anantapur,Andhra+Pradesh" target="_blank">
+    <img src="https://img.shields.io/badge/Location-Anantapur%2C%20AP%2C%20IN-FF6B35?style=flat-square&logo=googlemaps&logoColor=white" alt="Location">
+  </a>
+</p>
 
 </div>
 
@@ -17,126 +29,83 @@
 
 ## 👋 About Me
 
-I'm a **B.Pharm graduate (RGUHS, 2025)** from Koppal, Karnataka — working at the intersection of **pharmaceutical science, AI tools, vernacular health content, and EdTech platform development**.
+I am an **M.Pharm (Pharmacy Practice) Scholar** at the Raghavendra Institute of Pharmaceutical Education and Research (RIPER), an institution connected with the ISPOR India Andhra Pradesh Chapter. My work is positioned at the intersection of clinical pharmacy, Health Economics & Outcomes Research (HEOR), and natural language processing pipelines. 
 
-My path isn't conventional. I founded **TechStudyHubCore** — a live digital learning platform serving pharmacy and nursing students across Karnataka — while building AI-assisted curriculum frameworks in Kannada and deploying full-stack web products from a Tier-3 city with zero CS background.
+As the founder of **TechStudyHubCore**, I don't build technology for the sake of software; I build systems to solve real-world healthcare execution problems.
 
-I speak **five Indian languages natively or fluently**: Kannada, English, Hindi, Telugu, Tamil. In the context of vernacular AI, health content, and community-facing EdTech — this is a genuine differentiator that very few people in this space have.
-
-```
-B.Pharm (RGUHS 2025) → Telepharmacy Research → Generative AI → EdTech Founder → Health-Tech AI Specialist
-```
+> 🎯 **The 10-Year Vision:** Systematically bridging the gap between healthcare knowledge and healthcare outcomes. My goal is to transform dense clinical data into accessible, localized, and actionable patient-facing communication infrastructures.
 
 ---
 
-## 🚀 What I'm Working On
+## 🧠 Core Paradigm: Bridging the Translation Gap
 
-```
-🎓  TechStudyHubCore        →  Live EdTech platform for pharmacy & nursing students (Karnataka)
-🤖  S.M.I.L.E. Framework    →  AI-assisted vernacular pharmacology learning system (Kannada-first)
-🌐  Portfolio v2             →  Personal portfolio with Lenis scroll + Netlify CI/CD
-📝  Medical Content          →  Health content, patient education, vernacular health writing
-🔬  Vernacular AI            →  Indic language health datasets, annotation, AI training support
-```
+My current research framework focuses on tackling two core system failures:
+1. **The Capability Gap:** Health delivery infrastructure outputs immense volumes of evidence-based data, resulting in pure information overload.
+2. **The Comprehension Gap:** At the point of care, patients need immediate, simple, and culturally synchronized guidance to maintain medication adherence and navigate chronic diseases.
+
+> **Research Hypothesis:** Implementing technology-assisted, vernacular, and visual-first communication architectures will measurably optimize patient compliance, reduce re-hospitalization overhead, and improve real-world economic health outcomes.
 
 ---
 
-## 🏆 Highlights
+## 🤝 ISPOR 2026 Validation & Network
 
-| Achievement | Details |
-|---|---|
-| 🥇 PharmaNEST 3.E Award Winner | International pharma conference — Nanoparticle drug delivery systems — Ooty, 2022 |
-| 🏛️ AI in Pharma — NSQF Level 5 | Govt. recognised · LSSSDC / Skill India / NCVET · March 2026 |
-| 🤖 Generative AI Mastermind | Certified · Outskill · Dec 2025 |
-| 🌐 EdTech Founder | TechStudyHubCore — launched Jan 2026 · Live platform · 100+ students |
-| 🔬 Telepharmacy Research | "Patient Satisfaction & Counseling Effectiveness in Telepharmacy" — RGUHS Final Year 2025 |
-| 🗣️ 5 Indian Languages | Kannada (Native) · English · Hindi · Telugu · Tamil |
+My translation framework was stress-tested and refined through interactions at the **5th International HEOR Conference**:
+
+* **Public Health Translation (ICMR-NIRT):** Collaborated with **Dr. Muniyandi Malaisamy** (Scientist E & HOD) on optimizing public healthcare literacy models to address the engagement challenges embedded within large-scale tuberculosis (TB) awareness frameworks.
+* **Industry Evidence Generation (Sanofi HEVA):** Analyzed real-world evidence pipelines and necessary industry-level skill sets with **Dr. Achyuth Krishna**.
+* **Clinical Pharmacy Metrics (NIPER Guwahati):** Dissected parameters separating baseline practice from exceptional clinical outcomes with **Dr. Krishna Undela**.
 
 ---
 
-## 🧠 Skills & Competencies
+## 🛠️ Integrated Capabilities
 
-```
-Health-Tech & Medical Content
-  ├── Pharmacology writing & simplification
-  ├── Vernacular (Kannada) health content design
-  ├── Patient education content
-  └── Telepharmacy & digital health research
+### 🏥 Domain Knowledge & Methods
+* **Clinical Fields:** Pharmacy Practice, Pharmacovigilance, Patient Counseling Systems
+* **Research Frameworks:** HEOR (Health Economics & Outcomes Research), Real-World Evidence (RWE), Decision-Support Architecture
 
-AI & Generative AI
-  ├── Prompt Engineering (advanced)
-  ├── Claude · ChatGPT · Gemini workflows
-  ├── AI-assisted content & visual creation
-  └── LLM evaluation & hallucination awareness
+### 🌐 Digital Engineering & AI Pipelines
+* **AI & Language Processing:** OpenAI API, Python Data Pipelines, Deterministic Prompt Architectures, Workflow Automation via Make.com
+* **Full-Stack Development:** React.js, TailwindCSS, Node.js, Express, MongoDB, Firebase Cloud Storage
 
-EdTech & Curriculum
-  ├── PYQ content architecture (RGUHS syllabus)
-  ├── S.M.I.L.E. Framework — mnemonic visual learning
-  ├── Mobile-first learning design
-  └── Academic advisory & student mentoring
-
-Web & No-Code Deployment
-  ├── HTML5 · CSS3 · Tailwind · JavaScript
-  ├── Netlify CI/CD · Cloudflare DNS
-  ├── No-code workflow automation
-  └── GitHub version control
-```
+### 🗣️ Human Interface (Native/Fluent Dialects)
+![Kannada](https://img.shields.io/badge/Language-Kannada-00C8B4?style=flat-square)
+![English](https://img.shields.io/badge/Language-English-0077B5?style=flat-square)
+![Hindi](https://img.shields.io/badge/Language-Hindi-FF6B35?style=flat-square)
+![Telugu](https://img.shields.io/badge/Language-Telugu-EA4335?style=flat-square)
+![Tamil](https://img.shields.io/badge/Language-Tamil-412991?style=flat-square)
 
 ---
 
-## 🌐 Languages
+## 🚀 Active M.Pharm Strategy (Research Artifacts)
 
-| Language | Level | Context |
-|---|---|---|
-| Kannada | Native | Health content, community coordination, vernacular AI |
-| English | Professional | Research, academic writing, professional communication |
-| Hindi | Fluent | National reach, content adaptation |
-| Telugu | Conversational | AP/Telangana health content |
-| Tamil | Conversational | TN health content |
-
-> Multilingual fluency across South India's major languages is a core asset for vernacular AI, health content, and community-facing EdTech roles.
+* 📊 **Artifact 1:** Healthcare Communication Gap Assessment Tool (Quantifying clinical intake drop-off rates).
+* 📱 **Artifact 2:** Visual Patient Counseling Dashboard (Localized multi-dialect software interfaces).
+* 📈 **Artifact 3:** Clinical Outcome Improvement Study (Tracking vernacular delivery against recovery metrics).
+* 🧮 **Artifact 4:** HEOR Real-World Economic Impact Model (Evaluating financial savings from tech-enabled adherence).
 
 ---
 
-## 📁 Repositories
+## 📈 GitHub Metrics
 
-| Repo | Description | Stack |
-|---|---|---|
-| [portfolio](https://github.com/techstudyhubcore/portfolio) | Personal portfolio — Netlify CI/CD, Lenis scroll | HTML · CSS · JS · Lenis |
-| [https-techstudyhubcore.in](https://github.com/techstudyhubcore/https-techstudyhubcore.in) | TechStudyHubCore gateway landing page | HTML · CSS · JS · Lenis |
-
----
-
-## 📊 GitHub Activity
-
-<div align="center">
-
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=techstudyhubcore&show_icons=true&theme=dark&bg_color=0f1018&title_color=00c8b4&icon_color=00c8b4&text_color=dddddd&border_color=1f2030&hide_border=false)](https://github.com/techstudyhubcore)
-
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=techstudyhubcore&layout=compact&theme=dark&bg_color=0f1018&title_color=00c8b4&text_color=dddddd&border_color=1f2030)](https://github.com/techstudyhubcore)
-
-</div>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=kartik-h6&show_icons=true&theme=tokyonight&count_private=true" alt="Kartik's GitHub Stats" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kartik-h6&theme=tokyonight" alt="Kartik's GitHub Streak" width="48%" />
+</p>
 
 ---
 
-## 🔗 Connect
+## 🤝 Connect With Me
 
-| Platform | Link |
-|---|---|
-| 🌐 Portfolio | [portfolio.techstudyhubcore.in](https://portfolio.techstudyhubcore.in) |
-| 🎓 EdTech Platform | [techstudyhubcore.in](https://techstudyhubcore.in) |
-| 💼 LinkedIn | [linkedin.com/in/kartik-h6](https://linkedin.com/in/kartik-h6) |
-| 📧 Email | [kartik.h6822@gmail.com](mailto:kartik.h6822@gmail.com) |
-| 📞 Phone | +91 9141542270 |
+Let's talk about building cross-functional software for healthcare infrastructure, expanding vernacular accessibility, or scaling clinical communication architectures.
 
----
-
-<div align="center">
-
-*"Access to knowledge in your own language is not a privilege — it is a right."*
-
-**B.Pharm · Health-Tech AI · EdTech · Vernacular Content · Koppal,Karnataka**
-
-[![Profile Views](https://komarev.com/ghpvc/?username=techstudyhubcore&color=00c8b4&style=flat-square&label=Profile+Views)](https://github.com/techstudyhubcore)
-
-</div>
+<p align="left">
+  <a href="https://linkedin.com/in/kartik-h6" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://portfolio.techstudyhubcore.in" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-00c8b4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" />
+  </a>
+  <a href="mailto:kartik.h6822@gmail.com">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+</p>
