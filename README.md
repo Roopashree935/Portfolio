@@ -152,7 +152,7 @@ Presented on nanoparticle drug-delivery systems to a multi-institutional audienc
 | Repository | What it is |
 |---|---|
 | **[PMAS](https://github.com/kartik-h6/PMAS)** | Pharmacist-led Medication & Adherence Support — an independent telepharmacy research project: offline-first, five-language (EN/TE/KN/TA/HI) patient PWA, pharmacist portal and FastAPI backend, built for rural and remote chronic care. |
-| **[Profile](https://github.com/kartik-h6/Profile)** | Source for my portfolio site — [portfolio.techstudyhubcore.in](https://portfolio.techstudyhubcore.in) |
+| **[Portfolio](https://github.com/kartik-h6/Portfolio)** | Source for my portfolio site — [portfolio.techstudyhubcore.in](https://portfolio.techstudyhubcore.in) |
 | **[SGPA-CGPA-CALCULATOR](https://github.com/kartik-h6/SGPA-CGPA-CALCULATOR)** | CGPA/SGPA calculator built on the official PCI 2026 B.Pharm syllabus — real credit values and classification thresholds. |
 | **[digital-setup](https://github.com/kartik-h6/digital-setup)** | Websites and digital systems built for local businesses — the work that funds the free student tools. |
 
@@ -161,8 +161,12 @@ Presented on nanoparticle drug-delivery systems to a multi-institutional audienc
 ## 📈 GitHub Metrics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kartik-h6&show_icons=true&theme=tokyonight&count_private=true" alt="Kartik's GitHub Stats" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kartik-h6&theme=tokyonight" alt="Kartik's GitHub Streak" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=kartik-h6&show_icons=true&theme=tokyonight&count_private=true" alt="Kartik's GitHub stats" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kartik-h6&theme=tokyonight" alt="Kartik's GitHub streak" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kartik-h6&layout=compact&theme=tokyonight&langs_count=8&hide=roff,tex,batchfile" alt="Kartik's most used languages" width="46%" />
 </p>
 
 ---
