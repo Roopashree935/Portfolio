@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="visuals/bridging-india-translation.png" alt="Bridging India's healthcare translation gap — from information overload to patient comprehension" width="760" />
+<img src="assets/profile.png" alt="Kartik H." width="190" />
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00c8b4&center=true&vCenter=true&width=760&lines=M.Pharm+(Pharmacy+Practice)+Scholar;Medical+Writing;Clinical+Research;Healthcare+Communication;Digital+Health" alt="Typing SVG" />
@@ -32,13 +32,22 @@
 
 ## 👋 About Me
 
-I am an **M.Pharm (Pharmacy Practice)** scholar at the **Raghavendra Institute of Pharmaceutical Education and Research (RIPER)**, Anantapur (JNTUA), and I live in **Koppal, Karnataka**.
+I'm pursuing my **M.Pharm in Pharmacy Practice** at the **Raghavendra Institute of Pharmaceutical Education and Research (RIPER)**, Anantapur (JNTUA), and I live in **Koppal, Karnataka**.
 
-My work sits across **clinical research, evidence synthesis, medical writing and healthcare communication** — reading dense clinical material carefully and turning it into language that patients and practitioners can actually use.
+My work is driven by one question: **how can healthcare knowledge be communicated, organised and translated into understanding that helps people make better decisions — and ultimately improves health outcomes?**
 
-As the founder of **TechStudyHubCore**, I build systems to solve real healthcare-education problems rather than software for its own sake.
+Healthcare rarely suffers from a lack of information. It suffers from the gap between information and understanding. That observation shapes everything I do — currently building **TechStudyHubCore**, an initiative creating structured learning systems, educational resources and technology-assisted solutions that make complex healthcare knowledge more accessible and actionable.
 
-> 🎯 **The 10-year vision:** close the distance between healthcare knowledge and healthcare outcomes — making clinical information accessible, localised and actionable.
+I see technology not as a replacement for healthcare professionals, but as a tool for improving how knowledge is communicated, understood and applied — through visual frameworks, structured learning pathways and AI-assisted systems. As I progress through my M.Pharm, I want to investigate these questions through research, practical projects and collaboration with clinicians, educators and health-technology professionals.
+
+**Areas of interest**
+
+- Pharmacy Practice & Clinical Pharmacy
+- Healthcare Communication & Health Literacy
+- Digital Health & Health Informatics
+- AI in Healthcare
+- Patient Education & Medication Adherence
+- Healthcare Knowledge Systems
 
 ---
 
@@ -80,12 +89,23 @@ Kannada (native) · English (professional) · Hindi · Telugu · Tamil — stron
 
 ---
 
-## 🚀 Current M.Pharm Focus (planned research artifacts)
+## 💼 Experience
 
-- 📊 **Artifact 1** — Healthcare Communication Gap Assessment Tool (quantifying where clinical intake drops off)
-- 📱 **Artifact 2** — Visual Patient Counselling Dashboard (localised, multi-dialect interfaces)
-- 📈 **Artifact 3** — Clinical Outcome Improvement Study (vernacular delivery measured against recovery metrics)
-- 🧮 **Artifact 4** — Medication Adherence Support Model (effect of clearer, localised counselling on adherence)
+**Founder & Builder — TechStudyHubCore** · Apr 2026 – present · Koppal, Karnataka
+
+- Built a gateway of focused student tools rather than another content platform: a **CGPA/SGPA calculator built on the official PCI 2026 B.Pharm syllabus** (real credit values and classification thresholds), a career navigator, and a gateway linking SSLC Hub, Pharmacy Hub and Digital Setup.
+- Runs **Digital Setup** — websites and digital systems for local businesses — which funds the free student tools.
+- Deliberately chose not to compete on content volume, paywall student tools, use gamification, sell notes, or fabricate testimonials.
+
+**Medical Writer — Yuva Intern (Henry Harvin)** · Jul 2026 – Aug 2026
+
+- Junior Medical Writing internship: medical literature research, evidence synthesis, topic development and structured healthcare content planning.
+
+**Internship Trainee — KS Hospital** · Jan 2026 – Feb 2026
+
+- Junior Pharmacist across purchase, inventory and clinical data management.
+- Built and maintained a master database of **750+ pharmaceutical products** — generic compositions, brand names, manufacturers, dosage forms, strengths and routes of administration.
+- Supported **Medication Management & Use (MMU)** documentation aligned with NABH 6th Edition quality standards.
 
 ---
 
@@ -113,18 +133,28 @@ Kannada (native) · English (professional) · Hindi · Telugu · Tamil — stron
 
 ## 🔬 Research & Projects
 
-- **Telepharmacy — Comparative Literature Review (2025):** *"Patient Satisfaction and Counseling Effectiveness in Telepharmacy: A Comparative Literature Review of Remote vs. Face-to-Face"* — RGUHS final-year dissertation.
-- **Research presentation — PharmaNEST 3.E International Conference, Ooty (2022):** nanoparticle drug-delivery systems; recognised as an award recipient.
-- **TechStudyHubCore — Founder & Platform Architect (2026 – present):** a live health-education platform for pharmacy and nursing students, including the **S.M.I.L.E. Framework** built for Kannada-first learners.
+**Telepharmacy — Comparative Literature Review (2025)**
+
+*"Patient Satisfaction and Counseling Effectiveness in Telepharmacy: A Comparative Literature Review of Remote vs. Face-to-Face"* — RGUHS final-year dissertation. Satisfaction came out high in both models (**4.2 remote vs 4.5 face-to-face**), but trust and emotional reassurance still leaned toward in-person care — which reframed the question as *which mode suits a given patient at a given point in the care journey*, rather than which model wins.
+
+**Research presentation — PharmaNEST 3.E International Conference, Ooty (2022)**
+
+Presented on nanoparticle drug-delivery systems to a multi-institutional audience; recognised as an award recipient.
+
+<p align="center">
+  <img src="visuals/bridging-india-translation.png" alt="Bridging India's healthcare translation gap" width="720" />
+</p>
 
 ---
 
-## 📈 GitHub Metrics
+## 📦 Featured Repositories
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kartik-h6&show_icons=true&theme=tokyonight&count_private=true" alt="Kartik's GitHub Stats" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kartik-h6&theme=tokyonight" alt="Kartik's GitHub Streak" width="48%" />
-</p>
+| Repository | What it is |
+|---|---|
+| **[PMAS](https://github.com/kartik-h6/PMAS)** | Pharmacist-led Medication & Adherence Support — an independent telepharmacy research project: offline-first, five-language (EN/TE/KN/TA/HI) patient PWA, pharmacist portal and FastAPI backend, built for rural and remote chronic care. |
+| **[Profile](https://github.com/kartik-h6/Profile)** | Source for my portfolio site — [portfolio.techstudyhubcore.in](https://portfolio.techstudyhubcore.in) |
+| **[SGPA-CGPA-CALCULATOR](https://github.com/kartik-h6/SGPA-CGPA-CALCULATOR)** | CGPA/SGPA calculator built on the official PCI 2026 B.Pharm syllabus — real credit values and classification thresholds. |
+| **[digital-setup](https://github.com/kartik-h6/digital-setup)** | Websites and digital systems built for local businesses — the work that funds the free student tools. |
 
 ---
 
