@@ -4,8 +4,11 @@
 
    Defaults to DARK: this brand is dark-first (cyan-on-slate), so we do not
    follow the OS preference on a first visit — a light OS setting would
-   otherwise flip the whole site. The toggle still lets anyone choose light,
-   and that choice is remembered.
+   otherwise flip the whole site. The toggle lets anyone choose light, and
+   that choice is remembered.
+
+   The button label always states the mode you would switch TO, so the
+   control is self-explanatory without an icon.
    ========================================================================== */
 
 const STORAGE_KEY = 'kh-theme';
@@ -20,8 +23,12 @@ function preferred() {
 function apply(theme) {
   root.dataset.theme = theme;
   root.style.colorScheme = theme;
+
   document.querySelectorAll('[data-theme-toggle]').forEach((btn) => {
+    const next = theme === 'light' ? 'dark' : 'light';
+    btn.textContent = next === 'light' ? 'Light mode' : 'Dark mode';
     btn.setAttribute('aria-pressed', String(theme === 'light'));
+    btn.setAttribute('aria-label', `Switch to ${next} theme`);
   });
 }
 

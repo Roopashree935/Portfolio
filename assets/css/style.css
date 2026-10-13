@@ -1,13 +1,18 @@
 /* ==========================================================================
    style.css — design tokens, reset and base layer
-   portfolio.techstudyhubcore.in
    Load order: style.css -> components.css -> utilities.css -> animations.css
+
+   THEMING: every colour is a token. Dark is the default (:root); light is a
+   full override on [data-theme="light"]. Nothing below hard-codes a colour
+   except the two tokens that must flip together (--accent / --on-accent).
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   1. Design tokens
+   1. Design tokens — DARK (default)
    -------------------------------------------------------------------------- */
 :root {
+  color-scheme: dark;
+
   /* colour */
   --bg: #020617;
   --surface: #0b1220;
@@ -15,6 +20,7 @@
   --muted: #94a3b8;
   --accent: #22d3ee;
   --accent-2: #6366f1;
+  --on-accent: #001018;   /* text placed on top of --accent */
   --line: rgba(255, 255, 255, .08);
 
   /* type */
@@ -46,18 +52,27 @@
   --transition: 200ms cubic-bezier(.4, 0, .2, 1);
 }
 
-/* Light theme — toggled by assets/js/theme.js writing data-theme on <html> */
+/* --------------------------------------------------------------------------
+   2. Design tokens — LIGHT (override only)
+   The accent is darkened so cyan text stays readable on white; --on-accent
+   flips to white so primary buttons keep contrast.
+   -------------------------------------------------------------------------- */
 [data-theme="light"] {
-  --bg: #f8fafc;
+  color-scheme: light;
+
+  --bg: #f5f7fb;
   --surface: #ffffff;
-  --ink: #0f172a;
-  --muted: #475569;
-  --line: rgba(15, 23, 42, .10);
-  --shadow: 0 20px 45px -30px rgba(15, 23, 42, .35);
+  --ink: #0b1220;
+  --muted: #55637a;
+  --accent: #0e7490;
+  --accent-2: #4f46e5;
+  --on-accent: #ffffff;
+  --line: rgba(11, 18, 32, .12);
+  --shadow: 0 18px 40px -28px rgba(11, 18, 32, .35);
 }
 
 /* --------------------------------------------------------------------------
-   2. Reset
+   3. Reset
    -------------------------------------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; }
@@ -67,7 +82,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 ul[class], ol[class] { list-style: none; padding: 0; }
 
 /* --------------------------------------------------------------------------
-   3. Base
+   4. Base
    -------------------------------------------------------------------------- */
 body {
   font-family: var(--font-body);
@@ -78,6 +93,7 @@ body {
   min-height: 100dvh;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  transition: background-color var(--transition), color var(--transition);
 }
 
 h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.1; letter-spacing: -.02em; text-wrap: balance; }
@@ -94,7 +110,7 @@ a:hover { text-decoration: underline; }
 .skip-link {
   position: absolute; left: -9999px; top: 0; z-index: 100;
   padding: var(--space-s) var(--space-m);
-  background: var(--accent); color: #001018; font-weight: 600;
+  background: var(--accent); color: var(--on-accent); font-weight: 600;
 }
 .skip-link:focus { left: var(--space-m); top: var(--space-m); }
 
@@ -102,8 +118,3 @@ a:hover { text-decoration: underline; }
 .section { padding-block: var(--space-3xl); }
 .section--center { text-align: center; }
 .page { min-height: 60vh; }
-
-/* --------------------------------------------------------------------------
-   4. Design notes
-   TODO: extend tokens (brand gradients, motion curves) before the visual pass.
-   -------------------------------------------------------------------------- */

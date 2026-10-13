@@ -1,7 +1,5 @@
-# robots.txt
+# robots.txt — https://kartik-h6.github.io/Portfolio/
 User-agent: *
 Allow: /
-Disallow: /privacy.html
-Disallow: /terms.html
 
 Sitemap: https://kartik-h6.github.io/Portfolio/sitemap.xml
