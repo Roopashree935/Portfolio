@@ -1,12 +1,12 @@
 <div align="center">
 
-![Banner](https://drive.google.com/uc?export=view&id=1DtZYd5LI9G4vgndyqDQxKWKiuyXB3bbj)
+<img src="visuals/bridging-india-translation.png" alt="Bridging India's healthcare translation gap — from information overload to patient comprehension" width="760" />
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00c8b4&center=true&vCenter=true&width=700&lines=Clinical+Systems+Translator;M.Pharm+(Pharmacy+Practice);HEOR+%26+Evidence+Generation;Vernacular+AI+Architect" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00c8b4&center=true&vCenter=true&width=760&lines=M.Pharm+(Pharmacy+Practice)+Scholar;Medical+Writing;Clinical+Research;Healthcare+Communication;Digital+Health" alt="Typing SVG" />
 </a>
 
-### M.Pharm (Pharmacy Practice) Scholar · RIPER · HEOR & Real-World Evidence · Digital Health Systems
+### M.Pharm (Pharmacy Practice) Scholar · RIPER · Medical Writing · Clinical Research · Digital Health
 
 <p align="center">
   <a href="https://portfolio.techstudyhubcore.in" target="_blank">
@@ -18,8 +18,11 @@
   <a href="mailto:kartik.h6822@gmail.com">
     <img src="https://img.shields.io/badge/Email-kartik.h6822@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email">
   </a>
+  <a href="https://maps.google.com/?q=Koppal,Karnataka" target="_blank">
+    <img src="https://img.shields.io/badge/Residence-Koppal%2C%20Karnataka-FF6B35?style=flat-square&logo=googlemaps&logoColor=white" alt="Koppal, Karnataka">
+  </a>
   <a href="https://maps.google.com/?q=Anantapur,Andhra+Pradesh" target="_blank">
-    <img src="https://img.shields.io/badge/Location-Anantapur%2C%20AP%2C%20IN-FF6B35?style=flat-square&logo=googlemaps&logoColor=white" alt="Location">
+    <img src="https://img.shields.io/badge/Campus-Anantapur%2C%20AP-4B8BBE?style=flat-square&logo=googlemaps&logoColor=white" alt="Anantapur, Andhra Pradesh">
   </a>
 </p>
 
@@ -29,59 +32,90 @@
 
 ## 👋 About Me
 
-I am an **M.Pharm (Pharmacy Practice) Scholar** at the Raghavendra Institute of Pharmaceutical Education and Research (RIPER), an institution connected with the ISPOR India Andhra Pradesh Chapter. My work is positioned at the intersection of clinical pharmacy, Health Economics & Outcomes Research (HEOR), and natural language processing pipelines. 
+I am an **M.Pharm (Pharmacy Practice)** scholar at the **Raghavendra Institute of Pharmaceutical Education and Research (RIPER)**, Anantapur (JNTUA), and I live in **Koppal, Karnataka**.
 
-As the founder of **TechStudyHubCore**, I don't build technology for the sake of software; I build systems to solve real-world healthcare execution problems.
+My work sits across **clinical research, evidence synthesis, medical writing and healthcare communication** — reading dense clinical material carefully and turning it into language that patients and practitioners can actually use.
 
-> 🎯 **The 10-Year Vision:** Systematically bridging the gap between healthcare knowledge and healthcare outcomes. My goal is to transform dense clinical data into accessible, localized, and actionable patient-facing communication infrastructures.
+As the founder of **TechStudyHubCore**, I build systems to solve real healthcare-education problems rather than software for its own sake.
 
----
-
-## 🧠 Core Paradigm: Bridging the Translation Gap
-
-My current research framework focuses on tackling two core system failures:
-1. **The Capability Gap:** Health delivery infrastructure outputs immense volumes of evidence-based data, resulting in pure information overload.
-2. **The Comprehension Gap:** At the point of care, patients need immediate, simple, and culturally synchronized guidance to maintain medication adherence and navigate chronic diseases.
-
-> **Research Hypothesis:** Implementing technology-assisted, vernacular, and visual-first communication architectures will measurably optimize patient compliance, reduce re-hospitalization overhead, and improve real-world economic health outcomes.
+> 🎯 **The 10-year vision:** close the distance between healthcare knowledge and healthcare outcomes — making clinical information accessible, localised and actionable.
 
 ---
 
-## 🤝 ISPOR 2026 Validation & Network
+## 🧠 The Gap I Work On
 
-My translation framework was stress-tested and refined through interactions at the **5th International HEOR Conference**:
+Two failures I keep running into in healthcare delivery:
 
-* **Public Health Translation (ICMR-NIRT):** Collaborated with **Dr. Muniyandi Malaisamy** (Scientist E & HOD) on optimizing public healthcare literacy models to address the engagement challenges embedded within large-scale tuberculosis (TB) awareness frameworks.
-* **Industry Evidence Generation (Sanofi HEVA):** Analyzed real-world evidence pipelines and necessary industry-level skill sets with **Dr. Achyuth Krishna**.
-* **Clinical Pharmacy Metrics (NIPER Guwahati):** Dissected parameters separating baseline practice from exceptional clinical outcomes with **Dr. Krishna Undela**.
+1. **The Capability Gap** — health systems produce enormous volumes of evidence-based material, which arrives as information overload rather than understanding.
+2. **The Comprehension Gap** — at the point of care, patients need immediate, simple and culturally synchronised guidance to stay adherent and manage chronic conditions.
 
----
-
-## 🛠️ Integrated Capabilities
-
-### 🏥 Domain Knowledge & Methods
-* **Clinical Fields:** Pharmacy Practice, Pharmacovigilance, Patient Counseling Systems
-* **Research Frameworks:** HEOR (Health Economics & Outcomes Research), Real-World Evidence (RWE), Decision-Support Architecture
-
-### 🌐 Digital Engineering & AI Pipelines
-* **AI & Language Processing:** OpenAI API, Python Data Pipelines, Deterministic Prompt Architectures, Workflow Automation via Make.com
-* **Full-Stack Development:** React.js, TailwindCSS, Node.js, Express, MongoDB, Firebase Cloud Storage
-
-### 🗣️ Human Interface (Native/Fluent Dialects)
-![Kannada](https://img.shields.io/badge/Language-Kannada-00C8B4?style=flat-square)
-![English](https://img.shields.io/badge/Language-English-0077B5?style=flat-square)
-![Hindi](https://img.shields.io/badge/Language-Hindi-FF6B35?style=flat-square)
-![Telugu](https://img.shields.io/badge/Language-Telugu-EA4335?style=flat-square)
-![Tamil](https://img.shields.io/badge/Language-Tamil-412991?style=flat-square)
+> **Working hypothesis:** technology-assisted, vernacular, visual-first communication can measurably improve adherence and reduce avoidable re-hospitalisation.
 
 ---
 
-## 🚀 Active M.Pharm Strategy (Research Artifacts)
+## 🛠️ What I Actually Do
 
-* 📊 **Artifact 1:** Healthcare Communication Gap Assessment Tool (Quantifying clinical intake drop-off rates).
-* 📱 **Artifact 2:** Visual Patient Counseling Dashboard (Localized multi-dialect software interfaces).
-* 📈 **Artifact 3:** Clinical Outcome Improvement Study (Tracking vernacular delivery against recovery metrics).
-* 🧮 **Artifact 4:** HEOR Real-World Economic Impact Model (Evaluating financial savings from tech-enabled adherence).
+### Clinical & scientific work
+
+- Literature review and evidence synthesis
+- Structured medical writing and research documentation
+- Patient-counselling and health-literacy content
+- Telepharmacy concepts and digital-health engagement
+
+### AI orchestration — not software engineering
+
+I'm not a computer-science specialist, and I don't write production code as a discipline. What I do is **direct LLM models across the whole build lifecycle** and own the architecture around them:
+
+- **Idea → plan → design → build → deploy → host**, driven end to end
+- Prompt design and deterministic prompt structures
+- Directing models to produce, review and refine the code
+- Live hosting and delivery: domains, subdomains, multi-page routing (`/` paths)
+- No-code automation and structured content workflows
+
+The judgement being applied is about *what to build and why* — and keeping the result coherent — not about writing the syntax myself.
+
+### Languages (a clinical asset)
+
+Kannada (native) · English (professional) · Hindi · Telugu · Tamil — strong vernacular patient-communication capability.
+
+---
+
+## 🚀 Current M.Pharm Focus (planned research artifacts)
+
+- 📊 **Artifact 1** — Healthcare Communication Gap Assessment Tool (quantifying where clinical intake drops off)
+- 📱 **Artifact 2** — Visual Patient Counselling Dashboard (localised, multi-dialect interfaces)
+- 📈 **Artifact 3** — Clinical Outcome Improvement Study (vernacular delivery measured against recovery metrics)
+- 🧮 **Artifact 4** — Medication Adherence Support Model (effect of clearer, localised counselling on adherence)
+
+---
+
+## 🎓 Education
+
+| Programme | Institution | Period |
+|---|---|---|
+| **M.Pharm — Pharmacy Practice** | RIPER, Anantapur (JNTUA) | Aug 2026 – present |
+| **B.Pharm** | Priyadarshini College of Pharmacy, Koratagere (RGUHS) | 2021 – 2025 · CGPA 7.2 / 10 |
+| **Pre-University (PCMB)** | Satyam International School & PU College, Ballari | 2018 – 2020 · 81.45% |
+
+---
+
+## 📜 Certifications
+
+- **AI in Pharma: Transforming Life Sciences Through Technology** — LSSSDC · Skill India · NSQF Level 5 (Mar 2026)
+- **Generative AI Mastermind** — Outskill (Dec 2025)
+- **Google AI Essentials** — Google / Coursera
+- **Google Prompting Essentials** — Google / Coursera
+- **Use AI as a Creative or Expert Partner** — Google / Coursera
+- **Good Clinical Practice** — NIDA Clinical Trials Network
+- **Junior Medical Writing Intern** — YuvaIntern (certificate of experience)
+
+---
+
+## 🔬 Research & Projects
+
+- **Telepharmacy — Comparative Literature Review (2025):** *"Patient Satisfaction and Counseling Effectiveness in Telepharmacy: A Comparative Literature Review of Remote vs. Face-to-Face"* — RGUHS final-year dissertation.
+- **Research presentation — PharmaNEST 3.E International Conference, Ooty (2022):** nanoparticle drug-delivery systems; recognised as an award recipient.
+- **TechStudyHubCore — Founder & Platform Architect (2026 – present):** a live health-education platform for pharmacy and nursing students, including the **S.M.I.L.E. Framework** built for Kannada-first learners.
 
 ---
 
@@ -96,7 +130,7 @@ My translation framework was stress-tested and refined through interactions at t
 
 ## 🤝 Connect With Me
 
-Let's talk about building cross-functional software for healthcare infrastructure, expanding vernacular accessibility, or scaling clinical communication architectures.
+Let's talk about clinical communication, vernacular health education, or building patient-facing systems.
 
 <p align="left">
   <a href="https://linkedin.com/in/kartik-h6" target="_blank">
