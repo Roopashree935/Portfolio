@@ -9,8 +9,8 @@
 ### M.Pharm (Pharmacy Practice) Scholar · RIPER · Medical Writing · Clinical Research · Digital Health
 
 <p align="center">
-  <a href="https://portfolio.techstudyhubcore.in" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-portfolio.techstudyhubcore.in-00c8b4?style=flat-square&logo=google-chrome&logoColor=white" alt="Portfolio">
+  <a href="https://kartik-h6.github.io/Portfolio/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-kartik--h6.github.io-00c8b4?style=flat-square&logo=google-chrome&logoColor=white" alt="Portfolio">
   </a>
   <a href="https://linkedin.com/in/kartik-h6" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Kartik%20H.-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
@@ -83,9 +83,17 @@ I'm not a computer-science specialist, and I don't write production code as a di
 
 The judgement being applied is about *what to build and why* — and keeping the result coherent — not about writing the syntax myself.
 
-### Languages (a clinical asset)
+### Languages — a clinical asset
 
-Kannada (native) · English (professional) · Hindi · Telugu · Tamil — strong vernacular patient-communication capability.
+Not a footnote. The ability to explain a medicine in the patient's own language is part of the intervention.
+
+| Language | Proficiency | Where it helps |
+|---|---|---|
+| **Kannada** | Native | Primary patient-communication language; vernacular health content |
+| **English** | Professional | Medical writing, literature review, research documentation |
+| **Hindi** | Fluent | Cross-state patient counselling and health-literacy material |
+| **Telugu** | Conversational | Anantapur / Andhra Pradesh patient interactions |
+| **Tamil** | Conversational | Regional counselling support |
 
 ---
 
@@ -137,12 +145,16 @@ Kannada (native) · English (professional) · Hindi · Telugu · Tamil — stron
 
 *"Patient Satisfaction and Counseling Effectiveness in Telepharmacy: A Comparative Literature Review of Remote vs. Face-to-Face"* — RGUHS final-year dissertation. Satisfaction came out high in both models (**4.2 remote vs 4.5 face-to-face**), but trust and emotional reassurance still leaned toward in-person care — which reframed the question as *which mode suits a given patient at a given point in the care journey*, rather than which model wins.
 
+**Medical writing sample — AI Patient Education Narrative Review**
+
+A narrative review report written during the Junior Medical Writing internship — [read the report](assets/files/AI_Patient_Education_Narrative_Review_Report.docx).
+
 **Research presentation — PharmaNEST 3.E International Conference, Ooty (2022)**
 
 Presented on nanoparticle drug-delivery systems to a multi-institutional audience; recognised as an award recipient.
 
 <p align="center">
-  <img src="visuals/telepharmacy-infographic.png" alt="telepharmacy-infograpic-img" width="360" />
+  <img src="visuals/telepharmacy-infographic.png" alt="telepharmacy-infographic" width="360" />
 </p>
 
 ---
@@ -152,7 +164,7 @@ Presented on nanoparticle drug-delivery systems to a multi-institutional audienc
 | Repository | What it is |
 |---|---|
 | **[PMAS](https://github.com/kartik-h6/PMAS)** | Pharmacist-led Medication & Adherence Support — an independent telepharmacy research project: offline-first, five-language (EN/TE/KN/TA/HI) patient PWA, pharmacist portal and FastAPI backend, built for rural and remote chronic care. |
-| **[Portfolio](https://github.com/kartik-h6/Portfolio)** | Source for my portfolio site — [portfolio.techstudyhubcore.in](https://portfolio.techstudyhubcore.in) |
+| **[Portfolio](https://github.com/kartik-h6/Portfolio)** | Source for my portfolio site — [kartik-h6.github.io/Portfolio](https://kartik-h6.github.io/Portfolio/) |
 | **[SGPA-CGPA-CALCULATOR](https://github.com/kartik-h6/SGPA-CGPA-CALCULATOR)** | CGPA/SGPA calculator built on the official PCI 2026 B.Pharm syllabus — real credit values and classification thresholds. |
 | **[digital-setup](https://github.com/kartik-h6/digital-setup)** | Websites and digital systems built for local businesses — the work that funds the free student tools. |
 
@@ -179,7 +191,7 @@ Let's talk about clinical communication, vernacular health education, or buildin
   <a href="https://linkedin.com/in/kartik-h6" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://portfolio.techstudyhubcore.in" target="_blank">
+  <a href="https://kartik-h6.github.io/Portfolio/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-00c8b4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" />
   </a>
   <a href="mailto:kartik.h6822@gmail.com">
