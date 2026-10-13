@@ -15,7 +15,8 @@
 
 .site-nav { display: flex; align-items: center; gap: var(--space-l); padding-block: var(--space-s); }
 
-.brand { font-family: var(--font-display); font-weight: 700; letter-spacing: .02em; text-decoration: none; }
+.brand { display: inline-flex; align-items: center; gap: var(--space-xs); font-family: var(--font-display); font-weight: 700; letter-spacing: .02em; text-decoration: none; }
+.brand__mark { width: 26px; height: 26px; }
 
 .nav-list { display: flex; gap: var(--space-l); margin-inline-start: auto; }
 .nav-list a { color: var(--muted); text-decoration: none; font-size: var(--step--1); transition: color var(--transition); }
@@ -75,3 +76,34 @@
 .site-footer { margin-top: var(--space-3xl); padding-block: var(--space-xl); border-top: 1px solid var(--line); font-size: var(--step--1); }
 .site-footer__links { display: flex; gap: var(--space-m); margin-top: var(--space-s); }
 .site-footer__links a { color: var(--muted); text-decoration: none; }
+
+/* --------------------------------------------------------------------------
+   404 — "nothing translated here"
+   Built as a request readout rather than the usual apology page.
+   -------------------------------------------------------------------------- */
+.notfound { display: grid; gap: var(--space-l); justify-items: center; text-align: center; }
+
+.notfound__code {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: clamp(4.5rem, 20vw, 12rem); line-height: .8; letter-spacing: -.06em;
+  color: transparent; -webkit-text-stroke: 1.5px var(--accent); opacity: .28;
+  margin: 0;
+}
+
+.notfound__mark { width: clamp(88px, 16vw, 132px); height: auto; }
+.notfound__mark .nf-cube { animation: float-y 7s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+
+.readout {
+  width: min(100%, 46ch); text-align: start;
+  padding: var(--space-s) var(--space-l);
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--surface);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: var(--step--1);
+}
+.readout > div { display: flex; gap: var(--space-m); padding-block: .4rem; border-bottom: 1px dashed var(--line); }
+.readout > div:last-child { border-bottom: 0; }
+.readout dt { flex: 0 0 8ch; color: var(--muted); text-transform: uppercase; letter-spacing: .14em; font-size: .72em; padding-top: .3em; }
+.readout dd { margin: 0; word-break: break-word; }
+
+.notfound__links { display: flex; flex-wrap: wrap; gap: var(--space-s); justify-content: center; }

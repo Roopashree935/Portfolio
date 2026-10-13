@@ -3,15 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page not found — Kartik H.</title>
-  <meta name="description" content="That page could not be found.">
-  <link rel="canonical" href="https://portfolio.techstudyhubcore.in/404.html">
+  <title>Nothing translated here — 404</title>
+  <meta name="description" content="This address doesn't resolve to a page on this site.">
   <meta name="robots" content="noindex">
   <meta name="theme-color" content="#020617">
   <meta name="color-scheme" content="dark light">
 
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg">
   <link rel="icon" href="assets/images/favicon/favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +27,14 @@
 
   <header class="site-header">
     <nav class="site-nav container" aria-label="Primary">
-      <a class="brand" href="index.html">Kartik&nbsp;H.</a>
+      <a class="brand" href="index.html">
+        <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+          <defs><linearGradient id="navGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#00f3ff"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient></defs>
+          <polygon points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#navGrad)" stroke-width="6" stroke-linejoin="round"/>
+          <g stroke="url(#navGrad)" stroke-width="5" fill="none" stroke-linejoin="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
+        </svg>
+        Kartik&nbsp;H.
+      </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">Menu</button>
       <ul class="nav-list" id="nav-menu">
         <li><a href="about.html">About</a></li>
@@ -43,12 +49,32 @@
   </header>
 
   <main id="main" class="page">
-    <section class="section section--center" aria-labelledby="page-title">
-      <div class="container">
-        <p class="eyebrow">404</p>
-        <h1 id="page-title">Page not found</h1>
-        <p class="lead">The page you were looking for doesn't exist or has moved.</p>
-        <p><a class="btn btn--primary" href="index.html">Back to home</a></p>
+    <section class="section" aria-labelledby="page-title">
+      <div class="container notfound">
+        <p class="notfound__code" aria-hidden="true">404</p>
+
+        <svg class="notfound__mark" viewBox="0 0 100 100" role="img" aria-label="TechStudyHub Core mark">
+          <defs><linearGradient id="nfGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#00f3ff"/><stop offset="50%" stop-color="#22d3ee"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient></defs>
+          <polygon points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#nfGrad)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+          <g class="nf-cube" stroke="url(#nfGrad)" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
+        </svg>
+
+        <h1 id="page-title">Nothing translated here.</h1>
+        <p class="lead">The address you followed doesn't resolve to a page on this site. No content was ever published at this path — so there is nothing here to translate.</p>
+
+        <dl class="readout" aria-label="Request details">
+          <div><dt>request</dt><dd><span id="nf-path">unknown path</span></dd></div>
+          <div><dt>status</dt><dd>404 · route not found</dd></div>
+          <div><dt>cause</dt><dd>a typo, a moved page, or a stale link</dd></div>
+        </dl>
+
+        <nav class="notfound__links" aria-label="Where to go next">
+          <a class="btn btn--primary" href="index.html">Home</a>
+          <a class="btn" href="projects.html">Projects</a>
+          <a class="btn" href="research.html">Research</a>
+          <a class="btn" href="knowledge.html">Knowledge</a>
+          <a class="btn" href="contact.html">Contact</a>
+        </nav>
       </div>
     </section>
   </main>
@@ -64,6 +90,13 @@
     </div>
   </footer>
 
+  <script>
+    // Show the path that was actually requested — turns a dead end into a diagnostic.
+    (function () {
+      var el = document.getElementById('nf-path');
+      if (el) el.textContent = location.pathname + location.search;
+    })();
+  </script>
   <script type="module" src="assets/js/main.js"></script>
   <script type="module" src="assets/js/navigation.js"></script>
   <script type="module" src="assets/js/theme.js"></script>
