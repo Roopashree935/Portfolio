@@ -1,0 +1,7 @@
+# robots.txt — portfolio.techstudyhubcore.in
+User-agent: *
+Allow: /
+Disallow: /privacy.html
+Disallow: /terms.html
+
+Sitemap: https://portfolio.techstudyhubcore.in/sitemap.xml

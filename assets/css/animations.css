@@ -1,0 +1,28 @@
+/* ==========================================================================
+   animations.css — motion layer
+   Every effect is neutralised under prefers-reduced-motion (see bottom).
+   ========================================================================== */
+
+/* Scroll reveal — elements start hidden and gain .is-visible (assets/js/animations.js) */
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.is-visible { opacity: 1; transform: none; }
+.reveal--d1 { transition-delay: .08s; }
+.reveal--d2 { transition-delay: .16s; }
+.reveal--d3 { transition-delay: .24s; }
+
+/* Shared keyframes */
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes float-y { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+@keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+
+.anim-fade-in { animation: fade-in .6s ease both; }
+.anim-float { animation: float-y 6s ease-in-out infinite; }
+.anim-pulse { animation: pulse-dot 2s ease-in-out infinite; }
+
+/* Reduced motion: disable everything decorative */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .anim-fade-in, .anim-float, .anim-pulse { animation: none; }
+  *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+}
