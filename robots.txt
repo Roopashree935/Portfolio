@@ -1,7 +1,7 @@
-# robots.txt — portfolio.techstudyhubcore.in
+# robots.txt
 User-agent: *
 Allow: /
 Disallow: /privacy.html
 Disallow: /terms.html
 
-Sitemap: https://portfolio.techstudyhubcore.in/sitemap.xml
+Sitemap: https://kartik-h6.github.io/Portfolio/sitemap.xml
