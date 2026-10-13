@@ -158,6 +158,15 @@ Presented on nanoparticle drug-delivery systems to a multi-institutional audienc
 
 ---
 
+## 📈 GitHub Metrics
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=kartik-h6&show_icons=true&theme=tokyonight&count_private=true" alt="Kartik's GitHub Stats" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kartik-h6&theme=tokyonight" alt="Kartik's GitHub Streak" width="48%" />
+</p>
+
+---
+
 ## 🤝 Connect With Me
 
 Let's talk about clinical communication, vernacular health education, or building patient-facing systems.
