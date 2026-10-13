@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/profile.png" alt="Kartik H." width="280" />
+<img src="assets/profile.png" alt="Kartik H." width="720" />
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00c8b4&center=true&vCenter=true&width=760&lines=M.Pharm+(Pharmacy+Practice)+Scholar;Medical+Writing;Clinical+Research;Healthcare+Communication;Digital+Health" alt="Typing SVG" />
@@ -113,7 +113,7 @@ Kannada (native) · English (professional) · Hindi · Telugu · Tamil — stron
 
 | Programme | Institution | Period |
 |---|---|---|
-| **M.Pharm — Pharmacy Practice** | RIPER, Anantapur (JNTUA) | Aug 2026 – present |
+| **M.Pharm — Pharmacy Practice** | RIPER, Anantapur (JNTUA) | Oct 2026 – present |
 | **B.Pharm** | Priyadarshini College of Pharmacy, Koratagere (RGUHS) | 2021 – 2025 · CGPA 7.2 / 10 |
 | **Pre-University (PCMB)** | Satyam International School & PU College, Ballari | 2018 – 2020 · 81.45% |
 
@@ -142,7 +142,7 @@ Kannada (native) · English (professional) · Hindi · Telugu · Tamil — stron
 Presented on nanoparticle drug-delivery systems to a multi-institutional audience; recognised as an award recipient.
 
 <p align="center">
-  <img src="visuals/bridging-india-translation.png" alt="Bridging India's healthcare translation gap" width="720" />
+  <img src="visuals/telepharmacy-infographic.png" alt="telepharmacy-infograpic-img" width="360" />
 </p>
 
 ---
