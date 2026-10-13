@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/profile.png" alt="Kartik H." width="190" />
+<img src="assets/profile.png" alt="Kartik H." width="280" />
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00c8b4&center=true&vCenter=true&width=760&lines=M.Pharm+(Pharmacy+Practice)+Scholar;Medical+Writing;Clinical+Research;Healthcare+Communication;Digital+Health" alt="Typing SVG" />
