@@ -29,7 +29,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap">
 
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -44,8 +44,8 @@
       <a class="brand" href="index.html">
         <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
           <defs><linearGradient id="navGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#00f3ff"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient></defs>
-          <polygon points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#navGrad)" stroke-width="6" stroke-linejoin="round"/>
-          <g stroke="url(#navGrad)" stroke-width="5" fill="none" stroke-linejoin="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
+          <polygon class="ring" points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#navGrad)" stroke-width="5" stroke-linejoin="round"/>
+          <g stroke="url(#navGrad)" stroke-width="4" fill="none" stroke-linejoin="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
         </svg>
         Kartik&nbsp;H.
       </a>
@@ -63,22 +63,131 @@
   </header>
 
   <main id="main" class="page">
+
     <section class="section" aria-labelledby="page-title">
       <div class="container">
-        <p class="eyebrow">Journey</p>
-        <h1 id="page-title">Journey</h1>
-        <!-- TODO: education timeline, experience, certifications -->
-        <p class="mt-l">
-          <a class="btn btn--primary" href="assets/files/Kartik_H_CRS_Resume_2026.pdf" download>Download CV (PDF)</a>
-        </p>
+        <div class="section-head reveal">
+          <p class="eyebrow">Journey</p>
+          <h1 id="page-title">Pharmacy first, then the systems around it</h1>
+          <p class="lead">A pharmacy degree, a move into clinical practice, and a parallel build of the digital tools that make the communication side of care work.</p>
+          <p class="mt-l"><a class="btn btn--primary" href="assets/files/Kartik_H_CRS_Resume_2026.pdf" download>Download CV (PDF)</a></p>
+        </div>
+
+        <h2 class="mt-2xl reveal">Experience</h2>
+        <ol class="timeline reveal reveal--d1">
+          <li>
+            <p class="timeline__when">Apr 2026 — present · Koppal, Karnataka</p>
+            <h3>Founder &amp; Builder — TechStudyHubCore</h3>
+            <p class="timeline__where">Health-education platform · solopreneur, alongside M.Pharm</p>
+            <ul>
+              <li>Built a gateway of focused student tools rather than another content platform: a CGPA/SGPA calculator on the official PCI 2026 B.Pharm syllabus, a career navigator, and a gateway linking the SSLC Hub, Pharmacy Hub and Digital Setup ecosystems.</li>
+              <li>Runs Digital Setup — websites and digital systems for local businesses — which funds the free student tools.</li>
+              <li>Deliberately chose not to compete on content volume, paywall student tools, use gamification, sell notes, or fabricate testimonials.</li>
+            </ul>
+          </li>
+          <li>
+            <p class="timeline__when">Jul 2026 — Aug 2026</p>
+            <h3>Medical Writer — Yuva Intern (Henry Harvin)</h3>
+            <p class="timeline__where">Junior Medical Writing internship</p>
+            <ul>
+              <li>Medical literature research, evidence synthesis, topic development and structured healthcare content planning.</li>
+              <li>Produced a narrative review report on AI in patient education — <a href="assets/files/AI_Patient_Education_Narrative_Review_Report.docx" download>read the sample</a>.</li>
+            </ul>
+          </li>
+          <li>
+            <p class="timeline__when">Jan 2026 — Feb 2026</p>
+            <h3>Internship Trainee — KS Hospital</h3>
+            <p class="timeline__where">Junior Pharmacist · purchase, inventory &amp; clinical data management</p>
+            <ul>
+              <li>Built and maintained a master database of 750+ pharmaceutical products — generic compositions, brand names, manufacturers, dosage forms, strengths and routes of administration.</li>
+              <li>Supported Medication Management &amp; Use (MMU) documentation aligned with NABH 6th Edition quality standards.</li>
+            </ul>
+          </li>
+        </ol>
+
+        <h2 class="mt-2xl reveal">Education</h2>
+        <ol class="timeline reveal reveal--d1">
+          <li>
+            <p class="timeline__when">Oct 2026 — present</p>
+            <h3>M.Pharm — Pharmacy Practice</h3>
+            <p class="timeline__where">Raghavendra Institute of Pharmaceutical Education and Research (RIPER), Anantapur · JNTUA</p>
+            <ul><li>Focus areas aligned with clinical pharmacy, patient-centred care, evidence-based practice and research methodology.</li></ul>
+          </li>
+          <li>
+            <p class="timeline__when">2021 — 2025 · CGPA 7.2 / 10</p>
+            <h3>B.Pharm</h3>
+            <p class="timeline__where">Priyadarshini College of Pharmacy, Koratagere · RGUHS, Karnataka</p>
+          </li>
+          <li>
+            <p class="timeline__when">2018 — 2020 · 81.45%</p>
+            <h3>Pre-University — PCMB</h3>
+            <p class="timeline__where">Satyam International School &amp; PU College, Ballari, Karnataka</p>
+          </li>
+        </ol>
+
+        <h2 class="mt-2xl reveal">Certifications</h2>
+        <div class="grid grid--3 mt-l">
+          <article class="card card--hover reveal reveal--d1">
+            <p class="card__meta">Mar 2026 · Govt. recognised</p>
+            <h3>AI in Pharma: Transforming Life Sciences Through Technology</h3>
+            <p>LSSSDC · Skill India · NSQF Level 5 · recognised by NCVET</p>
+            <p class="mt-m"><a href="certificates/ai-in-pharma-nsqf-l5.pdf" target="_blank" rel="noopener">View certificate</a></p>
+          </article>
+          <article class="card card--hover reveal reveal--d2">
+            <p class="card__meta">Dec 2025</p>
+            <h3>Generative AI Mastermind</h3>
+            <p>Outskill · Certificate of Completion</p>
+            <p class="mt-m"><a href="certificates/generative-ai-mastermind.pdf" target="_blank" rel="noopener">View certificate</a></p>
+          </article>
+          <article class="card card--hover reveal reveal--d3">
+            <p class="card__meta">Google · Coursera</p>
+            <h3>Google AI Essentials</h3>
+            <p>Google Career Certificates · five-course specialisation</p>
+            <p class="mt-m"><a href="certificates/google-ai-essentials.pdf" target="_blank" rel="noopener">View certificate</a></p>
+          </article>
+          <article class="card card--hover reveal reveal--d1">
+            <p class="card__meta">Google · Coursera</p>
+            <h3>Google Prompting Essentials</h3>
+            <p>Google Career Certificates · four-course specialisation</p>
+            <p class="mt-m"><a href="certificates/google-prompting-essentials.pdf" target="_blank" rel="noopener">View certificate</a></p>
+          </article>
+          <article class="card card--hover reveal reveal--d2">
+            <p class="card__meta">Google · Coursera</p>
+            <h3>Use AI as a Creative or Expert Partner</h3>
+            <p>Authorised by Google, offered through Coursera</p>
+            <p class="mt-m"><a href="certificates/use-ai-as-creative-partner.pdf" target="_blank" rel="noopener">View certificate</a></p>
+          </article>
+          <article class="card card--hover reveal reveal--d3">
+            <p class="card__meta">NIDA Clinical Trials Network</p>
+            <h3>Good Clinical Practice</h3>
+            <p>Six-hour required course, GCP module — clinical trial conduct and ethics</p>
+            <p class="mt-m"><a href="certificates/good-clinical-practice-nida.pdf" target="_blank" rel="noopener">View certificate</a></p>
+          </article>
+          <article class="card card--hover reveal reveal--d1">
+            <p class="card__meta">Experience letter</p>
+            <h3>Junior Medical Writing Intern</h3>
+            <p>YuvaIntern · certificate of experience</p>
+            <p class="mt-m"><a href="certificates/junior-medical-writer-internship.pdf" target="_blank" rel="noopener">View certificate</a></p>
+          </article>
+          <article class="card card--hover reveal reveal--d2">
+            <p class="card__meta">Oct 2025 · RGUHS</p>
+            <h3>B.Pharm degree certificate</h3>
+            <p>Bachelor of Pharmacy · register no. 20P3770</p>
+            <p class="mt-m"><a href="certificates/bpharm-pdc-certificate.pdf" target="_blank" rel="noopener">View certificate</a></p>
+          </article>
+        </div>
+
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p class="site-footer__note">© 2026 Kartik H. · Built and maintained independently.</p>
+    <div class="container site-footer__inner">
+      <p class="faint">© 2026 Kartik H. · Koppal, Karnataka</p>
       <ul class="site-footer__links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
         <li><a href="privacy.html">Privacy</a></li>
         <li><a href="terms.html">Terms</a></li>
         <li><a href="contact.html">Contact</a></li>

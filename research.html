@@ -29,7 +29,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap">
 
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -44,8 +44,8 @@
       <a class="brand" href="index.html">
         <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
           <defs><linearGradient id="navGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#00f3ff"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient></defs>
-          <polygon points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#navGrad)" stroke-width="6" stroke-linejoin="round"/>
-          <g stroke="url(#navGrad)" stroke-width="5" fill="none" stroke-linejoin="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
+          <polygon class="ring" points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#navGrad)" stroke-width="5" stroke-linejoin="round"/>
+          <g stroke="url(#navGrad)" stroke-width="4" fill="none" stroke-linejoin="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
         </svg>
         Kartik&nbsp;H.
       </a>
@@ -63,32 +63,80 @@
   </header>
 
   <main id="main" class="page">
+
     <section class="section" aria-labelledby="page-title">
       <div class="container">
-        <p class="eyebrow">Research</p>
-        <h1 id="page-title">Research</h1>
-        <!-- TODO: telepharmacy comparative review, findings, conference presentation -->
-        <p class="lead">Documents behind the work — the telepharmacy review and the medical-writing sample.</p>
-        <ul class="stack mt-l">
-          <li>
-            <a href="projects/telepharmacy-project.pdf" download>
-              Telepharmacy — patient satisfaction &amp; counselling effectiveness: comparative literature review (PDF)
+        <div class="section-head reveal">
+          <p class="eyebrow">Research</p>
+          <h1 id="page-title">Evidence, read closely</h1>
+          <p class="lead">A final-year dissertation, a conference presentation, and a medical-writing sample — each one about the same thing: whether care actually reaches the person receiving it.</p>
+        </div>
+
+        <div class="grid grid--2">
+
+          <article class="card card--feature reveal reveal--d1">
+            <p class="card__meta">RGUHS dissertation · 2025</p>
+            <h3>Patient satisfaction &amp; counselling effectiveness in telepharmacy</h3>
+            <p class="faint">A comparative literature review of remote versus face-to-face pharmaceutical care.</p>
+            <p class="mt-m">The review compared remote and in-person counselling across patient satisfaction, trust and communication. Satisfaction came out high in <strong>both</strong> models — but trust and emotional reassurance still leaned toward in-person care. That gap reframed the question entirely.</p>
+
+            <dl class="readout mt-l" aria-label="Headline findings">
+              <div><dt>remote</dt><dd>4.2 / 5 satisfaction</dd></div>
+              <div><dt>in person</dt><dd>4.5 / 5 satisfaction</dd></div>
+              <div><dt>finding</dt><dd>trust &amp; reassurance still favour in-person</dd></div>
+              <div><dt>reframe</dt><dd>which mode suits this patient at this point in the journey</dd></div>
+            </dl>
+
+            <p class="mt-l">Rather than treating telepharmacy and face-to-face care as competing models, the work argues the useful question is <strong>mode-appropriateness</strong> — and that healthcare communication is not simply information transfer: it carries tone, pauses, empathy and non-verbal cues that technology cannot fully replace.</p>
+          </article>
+
+          <div class="stack--l reveal reveal--d2">
+            <figure class="card">
+              <img src="visuals/telepharmacy-infographic.png"
+                   alt="Infographic summarising the telepharmacy comparative review"
+                   loading="lazy">
+              <figcaption class="faint mt-s">Research visual prepared for a clinical and academic audience.</figcaption>
+            </figure>
+
+            <article class="card">
+              <p class="card__meta">Conference · 2022</p>
+              <h3>PharmaNEST 3.E International Conference, Ooty</h3>
+              <p>Presented on nanoparticle drug-delivery systems to a multi-institutional audience, and was recognised as an award recipient among peer researchers.</p>
+            </article>
+          </div>
+
+        </div>
+
+        <div class="mt-2xl reveal reveal--d3">
+          <p class="eyebrow">Documents</p>
+          <h2>Read the work itself</h2>
+          <div class="docs">
+            <a class="doc" href="projects/telepharmacy-project.pdf" download>
+              <span class="doc__kind">PDF</span>
+              <span class="doc__label">Telepharmacy — comparative literature review (full dissertation)</span>
             </a>
-          </li>
-          <li>
-            <a href="assets/files/AI_Patient_Education_Narrative_Review_Report.docx" download>
-              Medical-writing sample — AI patient-education narrative review (DOCX)
+            <a class="doc" href="assets/files/AI_Patient_Education_Narrative_Review_Report.docx" download>
+              <span class="doc__kind">DOCX</span>
+              <span class="doc__label">Medical-writing sample — AI patient-education narrative review</span>
             </a>
-          </li>
-        </ul>
+            <a class="doc" href="projects/telepharmacy-project-presentation.pdf" download>
+              <span class="doc__kind">PDF</span>
+              <span class="doc__label">Telepharmacy — presentation deck</span>
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p class="site-footer__note">© 2026 Kartik H. · Built and maintained independently.</p>
+    <div class="container site-footer__inner">
+      <p class="faint">© 2026 Kartik H. · Koppal, Karnataka</p>
       <ul class="site-footer__links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
         <li><a href="privacy.html">Privacy</a></li>
         <li><a href="terms.html">Terms</a></li>
         <li><a href="contact.html">Contact</a></li>

@@ -29,7 +29,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap">
 
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -44,8 +44,8 @@
       <a class="brand" href="index.html">
         <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
           <defs><linearGradient id="navGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#00f3ff"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient></defs>
-          <polygon points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#navGrad)" stroke-width="6" stroke-linejoin="round"/>
-          <g stroke="url(#navGrad)" stroke-width="5" fill="none" stroke-linejoin="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
+          <polygon class="ring" points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#navGrad)" stroke-width="5" stroke-linejoin="round"/>
+          <g stroke="url(#navGrad)" stroke-width="4" fill="none" stroke-linejoin="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
         </svg>
         Kartik&nbsp;H.
       </a>
@@ -63,19 +63,73 @@
   </header>
 
   <main id="main" class="page">
+
     <section class="section" aria-labelledby="page-title">
       <div class="container">
-        <p class="eyebrow">Knowledge</p>
-        <h1 id="page-title">Knowledge</h1>
-        <!-- TODO: writing, explainers, frameworks (e.g. S.M.I.L.E.), resource links -->
+        <div class="section-head reveal">
+          <p class="eyebrow">Knowledge</p>
+          <h1 id="page-title">Frameworks, not just opinions</h1>
+          <p class="lead">Explainers and visual systems I've built to make clinical content survive contact with a real patient — in their own language, at their own reading level.</p>
+        </div>
+
+        <figure class="card reveal reveal--d1">
+          <img src="visuals/bridging-india-translation.png"
+               alt="Diagram contrasting the capability gap (information overload) with the comprehension gap (interpretation and clarity)"
+               loading="lazy">
+          <figcaption class="faint mt-s">Bridging India's healthcare translation gap — the capability gap versus the comprehension gap.</figcaption>
+        </figure>
+
+        <div class="grid grid--2 mt-2xl">
+          <article class="card card--hover reveal reveal--d1">
+            <p class="card__meta">Framework</p>
+            <h3>S.M.I.L.E.</h3>
+            <p>An AI-assisted preventive-health education visual system designed for <strong>Kannada-first learners</strong>. It uses structured mnemonics and culturally relevant analogies to simplify pharmacology concepts that are normally taught only in English — built for Tier-2 and Tier-3 students and first-generation digital learners.</p>
+            <div class="pills"><span class="pill">Vernacular</span><span class="pill">Mnemonics</span><span class="pill">Pharmacology</span></div>
+          </article>
+
+          <article class="card card--hover reveal reveal--d2">
+            <p class="card__meta">Method</p>
+            <h3>Plain-language translation layer</h3>
+            <p>The working method behind most of my writing: take the evidence at full clinical fidelity, then build a second layer that a patient can act on — the interpretation layer that sits between data and decision. Not a simplification of the science; a translation of it.</p>
+            <div class="pills"><span class="pill">Health literacy</span><span class="pill">Evidence synthesis</span><span class="pill">Patient education</span></div>
+          </article>
+
+          <article class="card card--hover reveal reveal--d1">
+            <p class="card__meta">Note</p>
+            <h3>Why AI is a tool, not the clinician</h3>
+            <p>Technology should improve how knowledge is communicated, understood and applied — not replace the judgement of a healthcare professional. The useful role for AI here is simplification and reach: helping the same clinical message land in five languages and at three reading levels.</p>
+            <div class="pills"><span class="pill">AI in healthcare</span><span class="pill">Accessibility</span></div>
+          </article>
+
+          <article class="card card--hover reveal reveal--d2">
+            <p class="card__meta">Note</p>
+            <h3>Adherence is a communication outcome</h3>
+            <p>Most non-adherence isn't stubbornness — it's a comprehension failure somewhere upstream. If a patient cannot restate what the medicine is for and when to take it, the counselling didn't land, however complete it was on paper.</p>
+            <div class="pills"><span class="pill">Adherence</span><span class="pill">Counselling</span><span class="pill">Patient-centred care</span></div>
+          </article>
+        </div>
+
+        <div class="mt-2xl reveal reveal--d3">
+          <p class="eyebrow">Visual work</p>
+          <h2>S.M.I.L.E. framework</h2>
+          <figure class="card mt-l">
+            <img src="visuals/smile-framework.png"
+                 alt="S.M.I.L.E. framework — vernacular-focused pharmacology learning visual"
+                 loading="lazy">
+          </figure>
+        </div>
+
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p class="site-footer__note">© 2026 Kartik H. · Built and maintained independently.</p>
+    <div class="container site-footer__inner">
+      <p class="faint">© 2026 Kartik H. · Koppal, Karnataka</p>
       <ul class="site-footer__links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
         <li><a href="privacy.html">Privacy</a></li>
         <li><a href="terms.html">Terms</a></li>
         <li><a href="contact.html">Contact</a></li>
