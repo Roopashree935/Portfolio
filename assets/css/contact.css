@@ -1,14 +1,23 @@
 /* ==========================================================================
    contact.css — zero-backend reach-out UI
    ---------------------------------------------------------------------------
-   Two layers, both pure client-side deep links:
-     1. .cta-row  — one-tap buttons carrying a prefilled message
-     2. .composer — a tailored message with a live preview before handoff
-   Nothing is submitted from this page; no form service, no server, no cost.
+   One path, two steps: say who you are, then send. The WhatsApp/email buttons
+   stay inert until a role is chosen, so nobody routes around the form.
+   Pure client-side deep links: no form service, no server, no cost.
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   1. One-tap CTAs
+   Step markers
+   -------------------------------------------------------------------------- */
+.steps { display: grid; gap: var(--space-l); }
+.step__num {
+  font-family: var(--font-mono); font-size: var(--step--2);
+  letter-spacing: .18em; text-transform: uppercase; color: var(--accent);
+  display: block; margin-bottom: var(--space-s);
+}
+
+/* --------------------------------------------------------------------------
+   Buttons
    -------------------------------------------------------------------------- */
 .cta-row {
   display: grid;
@@ -23,7 +32,7 @@
   background: var(--surface); color: var(--ink);
   font-weight: 600; font-size: var(--step--1); text-decoration: none;
   transition: transform var(--transition), border-color var(--transition),
-              color var(--transition), filter var(--transition), background var(--transition);
+              color var(--transition), filter var(--transition), opacity var(--transition);
 }
 .cta:hover {
   transform: translateY(-2px); text-decoration: none;
@@ -38,13 +47,16 @@
   border-color: transparent; color: #04240f;
   box-shadow: 0 14px 30px -18px rgba(37, 211, 102, .85);
 }
-.cta--wa:hover {
-  color: #04240f; border-color: transparent; filter: brightness(1.06);
-}
+.cta--wa:hover { color: #04240f; border-color: transparent; filter: brightness(1.06); }
 .cta--block { width: 100%; }
 
+/* inert until a role is chosen */
+.cta.is-disabled {
+  opacity: .4; pointer-events: none; filter: grayscale(.45);
+}
+
 /* --------------------------------------------------------------------------
-   2. Composer
+   Composer
    -------------------------------------------------------------------------- */
 .composer {
   display: grid; grid-template-columns: 1.05fr .95fr;
@@ -52,7 +64,7 @@
   background: var(--surface); overflow: hidden;
 }
 .composer__form {
-  padding: var(--space-xl); display: grid; gap: var(--space-m); align-content: start;
+  padding: var(--space-xl); display: grid; gap: var(--space-l); align-content: start;
 }
 .composer__preview {
   padding: var(--space-xl); display: grid; gap: var(--space-m); align-content: start;
@@ -82,12 +94,12 @@
 .field textarea { resize: vertical; min-height: 84px; font-family: var(--font-body); }
 .field__hint { font-size: var(--step--2); color: var(--faint); line-height: 1.55; margin: 0; }
 
-/* intent chips */
+/* role chips */
 .chips { display: flex; flex-wrap: wrap; gap: var(--space-xs); }
 .chip {
-  padding: .4rem .8rem; border-radius: var(--radius-pill);
+  padding: .5rem .9rem; border-radius: var(--radius-pill);
   border: 1px solid var(--line); background: var(--surface);
-  color: var(--muted); font-size: var(--step--2); font-weight: 500;
+  color: var(--muted); font-size: var(--step--1); font-weight: 500;
   cursor: pointer;
   transition: color var(--transition), border-color var(--transition), background var(--transition);
 }
@@ -110,3 +122,4 @@
   background: var(--bg); border: 1px dashed var(--line-strong);
   color: var(--muted); min-height: 132px; margin: 0;
 }
+.preview[data-empty="true"] { color: var(--faint); font-style: italic; }
