@@ -24,7 +24,6 @@
 }
 .brand:hover { text-decoration: none; }
 .brand__mark { width: 26px; height: 26px; flex: none; }
-.brand__mark .ring { animation: none; }
 
 .nav-list { display: flex; gap: var(--space-l); margin-inline-start: auto; }
 .nav-list a {
@@ -166,7 +165,7 @@
   transition: border-color var(--transition), transform var(--transition), background var(--transition);
 }
 .card--hover:hover { border-color: var(--line-strong); transform: translateY(-3px); }
-.card h3 { margin-bottom: var(--space-s); }
+.card h3 { margin-bottom: var(--space-s); overflow-wrap: break-word; }
 .card p { color: var(--muted); }
 .card__meta {
   font-family: var(--font-mono); font-size: var(--step--2);
@@ -174,12 +173,19 @@
   margin-bottom: var(--space-s);
 }
 
+/* cards used as contact tiles — long identifiers (emails, handles) must fit */
+.card--contact h3 { font-size: var(--step-1); letter-spacing: -.01em; }
+
 /* feature card — carries a gradient edge */
 .card--feature { position: relative; overflow: hidden; }
 .card--feature::after {
   content: ""; position: absolute; inset-inline: 0; top: 0; height: 2px;
   background: var(--grad);
 }
+
+/* a card that is also a link should not inherit link underlines */
+a.card { color: var(--ink); text-decoration: none; display: block; }
+a.card:hover { text-decoration: none; }
 
 /* --------------------------------------------------------------------------
    Pills / tags
