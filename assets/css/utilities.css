@@ -1,5 +1,5 @@
 /* ==========================================================================
-   utilities.css — single-purpose helpers (loaded last, wins specificity ties)
+   utilities.css — single-purpose helpers (loaded after components)
    ========================================================================== */
 
 /* accessibility */
@@ -10,25 +10,27 @@
 
 /* text */
 .muted { color: var(--muted); }
+.faint { color: var(--faint); }
+.mono { font-family: var(--font-mono); }
 .text-center { text-align: center; }
-.text-balance { text-wrap: balance; }
+.measure { max-width: 68ch; }
+.measure-tight { max-width: 52ch; }
 
-/* layout */
+/* stacking */
 .stack > * + * { margin-top: var(--space-m); }
 .stack--l > * + * { margin-top: var(--space-l); }
 .cluster { display: flex; flex-wrap: wrap; gap: var(--space-s); align-items: center; }
-.grid { display: grid; gap: var(--space-l); }
-.grid--2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-.grid--3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.cluster--center { justify-content: center; }
 
-/* flow control */
-.flow-tight { max-width: 62ch; }
+/* spacing */
 .mt-0 { margin-top: 0; }
+.mt-s { margin-top: var(--space-s); }
 .mt-m { margin-top: var(--space-m); }
 .mt-l { margin-top: var(--space-l); }
 .mt-xl { margin-top: var(--space-xl); }
+.mt-2xl { margin-top: var(--space-2xl); }
 .mb-l { margin-bottom: var(--space-l); }
 
 /* visibility */
 .hide { display: none !important; }
-@media (max-width: 720px) { .hide-sm { display: none !important; } }
+@media (max-width: 780px) { .hide-sm { display: none !important; } }

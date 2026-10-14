@@ -1,74 +1,94 @@
 /* ==========================================================================
    style.css — design tokens, reset and base layer
-   Load order: style.css -> components.css -> utilities.css -> animations.css
+   ---------------------------------------------------------------------------
+   Identity: clinical clarity. Deep slate ground, a cyan-to-blue signal gradient
+   (the TechStudyHub Core mark), Space Grotesk for structure, Outfit for prose.
 
-   THEMING: every colour is a token. Dark is the default (:root); light is a
-   full override on [data-theme="light"]. Nothing below hard-codes a colour
-   except the two tokens that must flip together (--accent / --on-accent).
+   THEMING: dark is the default on :root; light is a full token override on
+   [data-theme="light"]. No component hard-codes a colour.
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   1. Design tokens — DARK (default)
+   1. Tokens — DARK (default)
    -------------------------------------------------------------------------- */
 :root {
   color-scheme: dark;
 
-  /* colour */
   --bg: #020617;
-  --surface: #0b1220;
-  --ink: #e2e8f0;
-  --muted: #94a3b8;
+  --bg-soft: #060c1a;
+  --surface: rgba(255, 255, 255, .035);
+  --surface-2: rgba(255, 255, 255, .07);
+
+  --ink: #e8eef8;
+  --muted: #93a1b8;
+  --faint: #64748b;
+
   --accent: #22d3ee;
-  --accent-2: #6366f1;
-  --on-accent: #001018;   /* text placed on top of --accent */
-  --line: rgba(255, 255, 255, .08);
+  --accent-2: #3b82f6;
+  --accent-3: #00f3ff;
+  --on-accent: #001018;
+
+  --line: rgba(255, 255, 255, .09);
+  --line-strong: rgba(255, 255, 255, .18);
+
+  --grad: linear-gradient(120deg, #00f3ff 0%, #22d3ee 45%, #3b82f6 100%);
+  --grad-text: linear-gradient(100deg, #67e8f9 0%, #22d3ee 40%, #60a5fa 100%);
+  --shadow: 0 30px 60px -40px rgba(0, 0, 0, .9);
+  --glow-a: rgba(0, 243, 255, .16);
+  --glow-b: rgba(59, 130, 246, .14);
 
   /* type */
   --font-display: "Space Grotesk", system-ui, sans-serif;
   --font-body: "Outfit", system-ui, sans-serif;
-  --step--1: clamp(.875rem, .84rem + .18vw, .95rem);
-  --step-0: clamp(1rem, .95rem + .25vw, 1.125rem);
-  --step-1: clamp(1.25rem, 1.1rem + .6vw, 1.5rem);
-  --step-2: clamp(1.5rem, 1.3rem + 1vw, 2rem);
-  --step-3: clamp(2rem, 1.6rem + 1.8vw, 3rem);
-  --step-4: clamp(2.5rem, 1.8rem + 3vw, 4.25rem);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --step--2: clamp(.75rem, .73rem + .1vw, .8rem);
+  --step--1: clamp(.85rem, .82rem + .15vw, .92rem);
+  --step-0: clamp(1rem, .96rem + .22vw, 1.1rem);
+  --step-1: clamp(1.2rem, 1.1rem + .5vw, 1.45rem);
+  --step-2: clamp(1.45rem, 1.28rem + .85vw, 1.95rem);
+  --step-3: clamp(1.85rem, 1.5rem + 1.7vw, 2.9rem);
+  --step-4: clamp(2.3rem, 1.7rem + 3vw, 4.1rem);
 
   /* space */
-  --space-2xs: .25rem;
-  --space-xs: .5rem;
-  --space-s: .75rem;
-  --space-m: 1rem;
-  --space-l: 1.5rem;
-  --space-xl: 2.5rem;
-  --space-2xl: 4rem;
-  --space-3xl: 6rem;
+  --space-2xs: .25rem; --space-xs: .5rem;  --space-s: .75rem;
+  --space-m: 1rem;     --space-l: 1.5rem;  --space-xl: 2.5rem;
+  --space-2xl: 4rem;   --space-3xl: 6rem;
 
-  /* shape + layout */
-  --radius-s: 8px;
-  --radius: 14px;
-  --radius-l: 24px;
-  --container: 1180px;
-  --shadow: 0 20px 45px -25px rgba(0, 0, 0, .75);
+  /* shape */
+  --radius-s: 8px; --radius: 14px; --radius-l: 22px; --radius-pill: 999px;
+  --container: 1160px;
   --transition: 200ms cubic-bezier(.4, 0, .2, 1);
 }
 
 /* --------------------------------------------------------------------------
-   2. Design tokens — LIGHT (override only)
-   The accent is darkened so cyan text stays readable on white; --on-accent
-   flips to white so primary buttons keep contrast.
+   2. Tokens — LIGHT
+   Accent darkens so cyan stays legible on white; --on-accent flips to white.
    -------------------------------------------------------------------------- */
 [data-theme="light"] {
   color-scheme: light;
 
-  --bg: #f5f7fb;
+  --bg: #f7f9fc;
+  --bg-soft: #eef2f8;
   --surface: #ffffff;
+  --surface-2: #f1f5fa;
+
   --ink: #0b1220;
-  --muted: #55637a;
+  --muted: #566a86;
+  --faint: #7b8ba3;
+
   --accent: #0e7490;
-  --accent-2: #4f46e5;
+  --accent-2: #2563eb;
+  --accent-3: #0891b2;
   --on-accent: #ffffff;
+
   --line: rgba(11, 18, 32, .12);
-  --shadow: 0 18px 40px -28px rgba(11, 18, 32, .35);
+  --line-strong: rgba(11, 18, 32, .24);
+
+  --grad: linear-gradient(120deg, #0891b2 0%, #0e7490 45%, #2563eb 100%);
+  --grad-text: linear-gradient(100deg, #0e7490 0%, #2563eb 100%);
+  --shadow: 0 22px 48px -32px rgba(11, 18, 32, .38);
+  --glow-a: rgba(8, 145, 178, .10);
+  --glow-b: rgba(37, 99, 235, .09);
 }
 
 /* --------------------------------------------------------------------------
@@ -87,7 +107,7 @@ ul[class], ol[class] { list-style: none; padding: 0; }
 body {
   font-family: var(--font-body);
   font-size: var(--step-0);
-  line-height: 1.65;
+  line-height: 1.68;
   color: var(--ink);
   background: var(--bg);
   min-height: 100dvh;
@@ -96,25 +116,58 @@ body {
   transition: background-color var(--transition), color var(--transition);
 }
 
-h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.1; letter-spacing: -.02em; text-wrap: balance; }
-h1 { font-size: var(--step-4); }
+/* ambient signal glow — the only decorative background */
+body::before {
+  content: "";
+  position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(58vw 58vw at 88% -12%, var(--glow-a), transparent 62%),
+    radial-gradient(52vw 52vw at -12% 24%, var(--glow-b), transparent 62%);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  line-height: 1.08;
+  letter-spacing: -.022em;
+  text-wrap: balance;
+  font-weight: 600;
+}
+h1 { font-size: var(--step-4); font-weight: 700; }
 h2 { font-size: var(--step-3); }
 h3 { font-size: var(--step-2); }
+h4 { font-size: var(--step-1); }
 p { text-wrap: pretty; }
+
+strong { color: var(--ink); font-weight: 600; }
 
 a { color: var(--accent); text-underline-offset: 3px; }
 a:hover { text-decoration: underline; }
 
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: var(--radius-s); }
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-s);
+}
 
 .skip-link {
-  position: absolute; left: -9999px; top: 0; z-index: 100;
+  position: absolute; left: -9999px; top: 0; z-index: 200;
   padding: var(--space-s) var(--space-m);
-  background: var(--accent); color: var(--on-accent); font-weight: 600;
+  background: var(--accent); color: var(--on-accent);
+  font-weight: 600; border-radius: 0 0 var(--radius-s) 0;
 }
-.skip-link:focus { left: var(--space-m); top: var(--space-m); }
+.skip-link:focus { left: 0; top: 0; }
 
+/* --------------------------------------------------------------------------
+   5. Layout primitives
+   -------------------------------------------------------------------------- */
 .container { width: min(100% - 2.5rem, var(--container)); margin-inline: auto; }
 .section { padding-block: var(--space-3xl); }
+.section--tight { padding-block: var(--space-2xl); }
 .section--center { text-align: center; }
-.page { min-height: 60vh; }
+.page { min-height: 55vh; }
+
+.grad-text {
+  background: var(--grad-text);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+}
