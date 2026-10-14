@@ -31,6 +31,9 @@
 .mt-2xl { margin-top: var(--space-2xl); }
 .mb-l { margin-bottom: var(--space-l); }
 
+/* an image already framed by .scanner should not draw a second frame */
+.scanner .hero__portrait { border: 0; box-shadow: none; border-radius: 0; }
+
 /* visibility */
 .hide { display: none !important; }
 @media (max-width: 780px) { .hide-sm { display: none !important; } }
