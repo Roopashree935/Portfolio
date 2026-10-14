@@ -1,8 +1,9 @@
 /* ==========================================================================
    style.css — design tokens, reset and base layer
    ---------------------------------------------------------------------------
-   Identity: clinical clarity. Deep slate ground, a cyan-to-blue signal gradient
-   (the TechStudyHub Core mark), Space Grotesk for structure, Outfit for prose.
+   Identity: clinical clarity. Deep slate ground, the TechStudyHub Core signal
+   gradient (cyan #22d3ee -> indigo #6366f1), Space Grotesk for structure,
+   Outfit for prose.
 
    THEMING: dark is the default on :root; light is a full token override on
    [data-theme="light"]. No component hard-codes a colour.
@@ -24,18 +25,19 @@
   --faint: #64748b;
 
   --accent: #22d3ee;
-  --accent-2: #3b82f6;
-  --accent-3: #00f3ff;
+  --accent-2: #6366f1;
+  --accent-3: #10b981;
   --on-accent: #001018;
 
   --line: rgba(255, 255, 255, .09);
   --line-strong: rgba(255, 255, 255, .18);
 
-  --grad: linear-gradient(120deg, #00f3ff 0%, #22d3ee 45%, #3b82f6 100%);
-  --grad-text: linear-gradient(100deg, #67e8f9 0%, #22d3ee 40%, #60a5fa 100%);
+  --grad: linear-gradient(120deg, #22d3ee 0%, #6366f1 100%);
+  --grad-text: linear-gradient(100deg, #67e8f9 0%, #22d3ee 42%, #a5b4fc 100%);
   --shadow: 0 30px 60px -40px rgba(0, 0, 0, .9);
-  --glow-a: rgba(0, 243, 255, .16);
-  --glow-b: rgba(59, 130, 246, .14);
+  --glow-a: rgba(34, 211, 238, .16);
+  --glow-b: rgba(99, 102, 241, .16);
+  --grid: rgba(34, 211, 238, .045);
 
   /* type */
   --font-display: "Space Grotesk", system-ui, sans-serif;
@@ -77,18 +79,19 @@
   --faint: #7b8ba3;
 
   --accent: #0e7490;
-  --accent-2: #2563eb;
-  --accent-3: #0891b2;
+  --accent-2: #4f46e5;
+  --accent-3: #047857;
   --on-accent: #ffffff;
 
   --line: rgba(11, 18, 32, .12);
   --line-strong: rgba(11, 18, 32, .24);
 
-  --grad: linear-gradient(120deg, #0891b2 0%, #0e7490 45%, #2563eb 100%);
-  --grad-text: linear-gradient(100deg, #0e7490 0%, #2563eb 100%);
+  --grad: linear-gradient(120deg, #0891b2 0%, #4f46e5 100%);
+  --grad-text: linear-gradient(100deg, #0e7490 0%, #4f46e5 100%);
   --shadow: 0 22px 48px -32px rgba(11, 18, 32, .38);
   --glow-a: rgba(8, 145, 178, .10);
-  --glow-b: rgba(37, 99, 235, .09);
+  --glow-b: rgba(79, 70, 229, .10);
+  --grid: rgba(14, 116, 144, .06);
 }
 
 /* --------------------------------------------------------------------------
@@ -119,10 +122,22 @@ body {
 /* ambient signal glow — the only decorative background */
 body::before {
   content: "";
-  position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  position: fixed; inset: 0; z-index: -2; pointer-events: none;
   background:
     radial-gradient(58vw 58vw at 88% -12%, var(--glow-a), transparent 62%),
     radial-gradient(52vw 52vw at -12% 24%, var(--glow-b), transparent 62%);
+}
+
+/* faint cyan measurement grid, faded out down the page */
+body::after {
+  content: "";
+  position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background-image:
+    linear-gradient(to right, var(--grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+  -webkit-mask-image: radial-gradient(130% 70% at 50% 0%, #000 25%, transparent 78%);
+          mask-image: radial-gradient(130% 70% at 50% 0%, #000 25%, transparent 78%);
 }
 
 h1, h2, h3, h4 {

@@ -16,6 +16,12 @@
 @keyframes pulse-dot { 0%, 100% { opacity: 1 } 50% { opacity: .35 } }
 @keyframes draw-ring { from { stroke-dashoffset: 260 } to { stroke-dashoffset: 0 } }
 
+/* scanner sweep — travels the full height of its wrapper */
+@keyframes scanv { 0%, 100% { top: 0 } 50% { top: calc(100% - 2px) } }
+
+/* credential ticker — track is duplicated in markup, so -50% loops seamlessly */
+@keyframes tick { from { transform: translateX(0) } to { transform: translateX(-50%) } }
+
 .anim-fade { animation: fade-in .6s ease both; }
 .anim-float { animation: float-y 7s ease-in-out infinite; }
 .anim-pulse { animation: pulse-dot 2.4s ease-in-out infinite; }
@@ -30,7 +36,9 @@
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .anim-fade, .anim-float, .anim-pulse, .brand__mark .ring,
-  .notfound__mark .nf-cube { animation: none !important; }
+  .notfound__mark .nf-cube, .scanner::after, .ticker__track { animation: none !important; }
+  .scanner::after { opacity: 0; }
+  .scanner img { filter: none !important; }
   *, *::before, *::after {
     animation-duration: .001ms !important;
     transition-duration: .001ms !important;
