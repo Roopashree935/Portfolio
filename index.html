@@ -9,7 +9,6 @@
   <meta name="theme-color" content="#020617">
   <meta name="color-scheme" content="dark light">
 
-  <!-- Open Graph / social — purpose-built 1200x630 card -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Kartik H.">
   <meta property="og:title" content="Kartik H. — M.Pharm (Pharmacy Practice)">
@@ -30,7 +29,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap">
 
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -47,19 +46,9 @@
     "jobTitle": "M.Pharm (Pharmacy Practice) Scholar",
     "affiliation": { "@type": "CollegeOrUniversity", "name": "Raghavendra Institute of Pharmaceutical Education and Research (RIPER)" },
     "address": { "@type": "PostalAddress", "addressLocality": "Koppal", "addressRegion": "Karnataka", "addressCountry": "IN" },
-    "sameAs": [
-      "https://www.linkedin.com/in/kartik-h6",
-      "https://github.com/kartik-h6"
-    ],
+    "sameAs": ["https://www.linkedin.com/in/kartik-h6", "https://github.com/kartik-h6"],
     "knowsLanguage": ["Kannada", "English", "Hindi", "Telugu", "Tamil"],
-    "knowsAbout": [
-      "Pharmacy Practice",
-      "Clinical Research",
-      "Medical Writing",
-      "Healthcare Communication",
-      "Digital Health",
-      "Patient Education"
-    ]
+    "knowsAbout": ["Pharmacy Practice", "Clinical Research", "Medical Writing", "Healthcare Communication", "Digital Health", "Patient Education"]
   }
   </script>
 </head>
@@ -71,8 +60,8 @@
       <a class="brand" href="index.html">
         <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
           <defs><linearGradient id="navGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#00f3ff"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient></defs>
-          <polygon points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#navGrad)" stroke-width="6" stroke-linejoin="round"/>
-          <g stroke="url(#navGrad)" stroke-width="5" fill="none" stroke-linejoin="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
+          <polygon class="ring" points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#navGrad)" stroke-width="5" stroke-linejoin="round"/>
+          <g stroke="url(#navGrad)" stroke-width="4" fill="none" stroke-linejoin="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
         </svg>
         Kartik&nbsp;H.
       </a>
@@ -90,24 +79,129 @@
   </header>
 
   <main id="main" class="page">
-    <section class="hero" aria-labelledby="hero-title">
+
+    <!-- ── Hero ─────────────────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <p class="eyebrow anim-fade">M.Pharm (Pharmacy Practice) · RIPER, Anantapur</p>
+          <h1>Healthcare knowledge, <span class="grad-text">translated into understanding</span>.</h1>
+          <p class="lead">Healthcare rarely suffers from a lack of information — it suffers from the gap between information and understanding. I work on closing it: medical writing, evidence synthesis, healthcare communication and digital health.</p>
+          <p class="hero__actions">
+            <a class="btn btn--primary" href="projects.html">View work</a>
+            <a class="btn" href="assets/files/Kartik_H_CRS_Resume_2026.pdf" download>Download CV</a>
+          </p>
+        </div>
+        <img class="hero__portrait anim-fade" src="assets/images/profile/profile.jpg"
+             alt="Kartik H." width="1254" height="1254" loading="eager">
+      </div>
+
       <div class="container">
-        <p class="eyebrow">M.Pharm (Pharmacy Practice) · RIPER, Anantapur</p>
-        <h1 id="hero-title">Healthcare knowledge, translated into understanding.</h1>
-        <p class="lead">Medical writing, clinical research, healthcare communication and digital health — building systems that close the gap between information and understanding.</p>
-        <p class="hero__actions">
-          <a class="btn btn--primary" href="projects.html">Projects</a>
-          <a class="btn" href="research.html">Research</a>
-        </p>
-        <!-- TODO: featured highlights, latest work, quick links -->
+        <dl class="stats">
+          <div class="stat"><b>5</b><span>Languages</span></div>
+          <div class="stat"><b>8</b><span>Certifications</span></div>
+          <div class="stat"><b>100+</b><span>Students reached</span></div>
+          <div class="stat"><b>1</b><span>Live platform</span></div>
+        </dl>
       </div>
     </section>
+
+    <!-- ── The gap ──────────────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="gap-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">The problem</p>
+          <h2 id="gap-title">Two failures I keep running into</h2>
+          <p class="lead">Both are communication failures, not knowledge failures — and both are fixable.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <article class="card card--hover reveal reveal--d1">
+            <p class="card__meta">01 · Capability</p>
+            <h3>The Capability Gap</h3>
+            <p>Health systems generate enormous volumes of evidence-based material. It arrives as information overload rather than understanding — technically correct, practically unusable.</p>
+          </article>
+          <article class="card card--hover reveal reveal--d2">
+            <p class="card__meta">02 · Comprehension</p>
+            <h3>The Comprehension Gap</h3>
+            <p>At the point of care, patients need immediate, simple and culturally synchronised guidance to stay adherent and manage chronic conditions. That layer is usually missing.</p>
+          </article>
+        </div>
+
+        <div class="mt-xl reveal reveal--d3">
+          <dl class="readout" aria-label="Working hypothesis">
+            <div><dt>hypothesis</dt><dd>technology-assisted, vernacular, visual-first communication measurably improves adherence</dd></div>
+            <div><dt>outcome</dt><dd>fewer avoidable re-hospitalisations</dd></div>
+            <div><dt>method</dt><dd>evidence synthesis &rarr; plain-language design &rarr; localised delivery</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Selected work ────────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">Built, not proposed</h2>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card card--hover card--feature reveal reveal--d1">
+            <p class="card__meta">Research platform</p>
+            <h3>PMAS</h3>
+            <p>Pharmacist-led Medication &amp; Adherence Support — an offline-first, five-language patient app with a pharmacist portal and API backend, built for rural and remote chronic care.</p>
+            <div class="pills">
+              <span class="pill">Telepharmacy</span><span class="pill">5 languages</span><span class="pill">Offline-first</span>
+            </div>
+            <p class="mt-l"><a class="btn btn--sm" href="https://github.com/kartik-h6/PMAS" target="_blank" rel="noopener">Repository</a></p>
+          </article>
+
+          <article class="card card--hover card--feature reveal reveal--d2">
+            <p class="card__meta">EdTech</p>
+            <h3>TechStudyHubCore</h3>
+            <p>A live health-education platform for pharmacy and nursing students — a CGPA/SGPA calculator built on the official PCI 2026 syllabus, a career navigator, and the S.M.I.L.E. framework for Kannada-first learners.</p>
+            <div class="pills">
+              <span class="pill pill--live">Live</span><span class="pill">Vernacular</span><span class="pill">AI-assisted</span>
+            </div>
+            <p class="mt-l"><a class="btn btn--sm" href="https://techstudyhubcore.in" target="_blank" rel="noopener">Visit platform</a></p>
+          </article>
+
+          <article class="card card--hover card--feature reveal reveal--d3">
+            <p class="card__meta">Research</p>
+            <h3>Telepharmacy review</h3>
+            <p>A comparative literature review of remote versus face-to-face pharmacy counselling — satisfaction was high in both, but trust and reassurance still leaned in-person.</p>
+            <div class="pills">
+              <span class="pill">Evidence synthesis</span><span class="pill">2025</span>
+            </div>
+            <p class="mt-l"><a class="btn btn--sm" href="research.html">Read the work</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Contact strip ────────────────────────────────────────────── -->
+    <section class="section--tight" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="card card--feature reveal">
+          <h2 id="cta-title">Open to clinical research, pharmacy practice and medical writing roles.</h2>
+          <p class="lead mt-m">Available immediately · Remote, on-site or hybrid · References on request.</p>
+          <p class="hero__actions">
+            <a class="btn btn--primary" href="contact.html">Get in touch</a>
+            <a class="btn" href="https://www.linkedin.com/in/kartik-h6" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p class="site-footer__note">© 2026 Kartik H. · Built and maintained independently.</p>
+    <div class="container site-footer__inner">
+      <p class="faint">© 2026 Kartik H. · Koppal, Karnataka</p>
       <ul class="site-footer__links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
         <li><a href="privacy.html">Privacy</a></li>
         <li><a href="terms.html">Terms</a></li>
         <li><a href="contact.html">Contact</a></li>

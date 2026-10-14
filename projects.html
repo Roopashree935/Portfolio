@@ -29,7 +29,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap">
 
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -44,8 +44,8 @@
       <a class="brand" href="index.html">
         <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
           <defs><linearGradient id="navGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#00f3ff"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient></defs>
-          <polygon points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#navGrad)" stroke-width="6" stroke-linejoin="round"/>
-          <g stroke="url(#navGrad)" stroke-width="5" fill="none" stroke-linejoin="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
+          <polygon class="ring" points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#navGrad)" stroke-width="5" stroke-linejoin="round"/>
+          <g stroke="url(#navGrad)" stroke-width="4" fill="none" stroke-linejoin="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
         </svg>
         Kartik&nbsp;H.
       </a>
@@ -63,20 +63,75 @@
   </header>
 
   <main id="main" class="page">
+
     <section class="section" aria-labelledby="page-title">
       <div class="container">
-        <p class="eyebrow">Projects</p>
-        <h1 id="page-title">Projects</h1>
-        <!-- TODO: PMAS, TechStudyHubCore tools, portfolio platform, digital services -->
-        <!-- Images go in assets/images/projects/ -->
+        <div class="section-head reveal">
+          <p class="eyebrow">Projects</p>
+          <h1 id="page-title">Things that exist and run</h1>
+          <p class="lead">Live platforms, research artefacts and digital systems — built end to end, from the problem statement to the deployed URL.</p>
+        </div>
+
+        <div class="grid grid--2">
+
+          <article class="card card--hover card--feature reveal reveal--d1">
+            <p class="card__meta">Telepharmacy · Research platform</p>
+            <h3>PMAS — Pharmacist-led Medication &amp; Adherence Support</h3>
+            <p>An independent telepharmacy research project: an offline-first, five-language (EN/TE/KN/TA/HI) patient app, a pharmacist portal and an API backend — designed for rural and remote chronic care, where connectivity and language are the two things that break adherence.</p>
+            <div class="pills">
+              <span class="pill">Offline-first</span><span class="pill">5 languages</span><span class="pill">Patient PWA</span><span class="pill">Pharmacist portal</span>
+            </div>
+            <p class="hero__actions">
+              <a class="btn btn--sm btn--primary" href="https://kartik-h6.github.io/PMAS/" target="_blank" rel="noopener">Live site</a>
+              <a class="btn btn--sm" href="https://github.com/kartik-h6/PMAS" target="_blank" rel="noopener">Repository</a>
+            </p>
+          </article>
+
+          <article class="card card--hover card--feature reveal reveal--d2">
+            <p class="card__meta">EdTech · Live platform</p>
+            <h3>TechStudyHubCore</h3>
+            <p>A gateway of focused tools for pharmacy and nursing students rather than another content platform. A CGPA/SGPA calculator built on the official PCI 2026 B.Pharm syllabus, a career navigator, and a gateway linking the SSLC Hub, Pharmacy Hub and Digital Setup ecosystems.</p>
+            <div class="pills">
+              <span class="pill pill--live">Live</span><span class="pill">Kannada-first</span><span class="pill">AI-assisted</span>
+            </div>
+            <p class="hero__actions">
+              <a class="btn btn--sm btn--primary" href="https://techstudyhubcore.in" target="_blank" rel="noopener">Visit platform</a>
+              <a class="btn btn--sm" href="https://github.com/kartik-h6/SGPA-CGPA-CALCULATOR" target="_blank" rel="noopener">Calculator repo</a>
+            </p>
+          </article>
+
+          <article class="card card--hover reveal reveal--d1">
+            <p class="card__meta">Web · Independent build</p>
+            <h3>This portfolio platform</h3>
+            <p>Hand-built and deployed: a multi-page static site with a full light/dark theme system, an SVG brand system, structured data, and a custom diagnostic 404. Built by directing LLM models through idea, plan, design, build and deployment.</p>
+            <div class="pills">
+              <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">GitHub Pages</span>
+            </div>
+            <p class="mt-l"><a class="btn btn--sm" href="https://github.com/kartik-h6/Portfolio" target="_blank" rel="noopener">Repository</a></p>
+          </article>
+
+          <article class="card card--hover reveal reveal--d2">
+            <p class="card__meta">Digital services</p>
+            <h3>Digital Setup</h3>
+            <p>Websites and digital systems built for local businesses — the commercial arm that funds the free student tools on TechStudyHubCore. Landing pages, structured content and no-code automation.</p>
+            <div class="pills">
+              <span class="pill">Landing pages</span><span class="pill">Automation</span><span class="pill">SMEs</span>
+            </div>
+            <p class="mt-l"><a class="btn btn--sm" href="https://github.com/kartik-h6/digital-setup" target="_blank" rel="noopener">Repository</a></p>
+          </article>
+
+        </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p class="site-footer__note">© 2026 Kartik H. · Built and maintained independently.</p>
+    <div class="container site-footer__inner">
+      <p class="faint">© 2026 Kartik H. · Koppal, Karnataka</p>
       <ul class="site-footer__links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
         <li><a href="privacy.html">Privacy</a></li>
         <li><a href="terms.html">Terms</a></li>
         <li><a href="contact.html">Contact</a></li>

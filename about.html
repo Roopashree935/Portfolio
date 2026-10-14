@@ -29,7 +29,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap">
 
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -44,8 +44,8 @@
       <a class="brand" href="index.html">
         <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
           <defs><linearGradient id="navGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#00f3ff"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient></defs>
-          <polygon points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#navGrad)" stroke-width="6" stroke-linejoin="round"/>
-          <g stroke="url(#navGrad)" stroke-width="5" fill="none" stroke-linejoin="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
+          <polygon class="ring" points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#navGrad)" stroke-width="5" stroke-linejoin="round"/>
+          <g stroke="url(#navGrad)" stroke-width="4" fill="none" stroke-linejoin="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
         </svg>
         Kartik&nbsp;H.
       </a>
@@ -63,28 +63,59 @@
   </header>
 
   <main id="main" class="page">
+
     <section class="section" aria-labelledby="page-title">
       <div class="container">
-        <p class="eyebrow">About</p>
-        <h1 id="page-title">About me</h1>
-        <!-- TODO: biography, areas of interest, education summary -->
+        <div class="section-head reveal">
+          <p class="eyebrow">About</p>
+          <h1 id="page-title">I read the evidence, then write the part people can actually use.</h1>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="stack--l measure reveal reveal--d1">
+            <p>I'm pursuing my <strong>M.Pharm in Pharmacy Practice</strong> at the Raghavendra Institute of Pharmaceutical Education and Research (RIPER), Anantapur — and I live in Koppal, Karnataka.</p>
+            <p>My work is driven by one question: <strong>how can healthcare knowledge be communicated, organised and translated into understanding that helps people make better decisions?</strong> During the move from B.Pharm to M.Pharm I became increasingly interested in a problem that sits beyond pharmacy itself: healthcare rarely suffers from a lack of information — it suffers from the gap between information and understanding.</p>
+            <p>I currently build <strong>TechStudyHubCore</strong>, an initiative creating structured learning systems, educational resources and technology-assisted solutions that make complex healthcare knowledge more accessible and actionable.</p>
+          </div>
+
+          <div class="stack--l measure reveal reveal--d2">
+            <p>I don't see technology as a replacement for healthcare professionals. I see it as a tool for improving how knowledge is communicated, understood and applied — through visual frameworks, structured learning pathways and AI-assisted systems.</p>
+            <p>As I progress through my M.Pharm, I want to investigate these questions through research, practical projects and collaboration with clinicians, educators and health-technology professionals.</p>
+            <p class="muted">This site is a public thinking journal as much as a portfolio — what I'm learning about pharmacy practice, healthcare communication, digital health and the systems that connect knowledge with better outcomes.</p>
+          </div>
+        </div>
+
+        <div class="mt-2xl reveal reveal--d3">
+          <p class="eyebrow">Areas of interest</p>
+          <div class="pills">
+            <span class="pill">Pharmacy Practice</span>
+            <span class="pill">Clinical Pharmacy</span>
+            <span class="pill">Healthcare Communication</span>
+            <span class="pill">Health Literacy</span>
+            <span class="pill">Digital Health</span>
+            <span class="pill">Health Informatics</span>
+            <span class="pill">AI in Healthcare</span>
+            <span class="pill">Patient Education</span>
+            <span class="pill">Medication Adherence</span>
+            <span class="pill">Healthcare Knowledge Systems</span>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- ── Languages — clinical asset ───────────────────────────────── -->
     <section class="section" aria-labelledby="lang-title">
       <div class="container">
-        <p class="eyebrow">Clinical asset</p>
-        <h2 id="lang-title">Languages I work in</h2>
-        <p class="lead">Not a footnote. The ability to explain a medicine in the patient's own language is part of the intervention, not decoration around it.</p>
+        <div class="section-head reveal">
+          <p class="eyebrow">Clinical asset</p>
+          <h2 id="lang-title">Languages I work in</h2>
+          <p class="lead">Not a footnote. The ability to explain a medicine in the patient's own language is part of the intervention, not decoration around it.</p>
+        </div>
 
-        <table class="table">
+        <table class="table reveal reveal--d1">
           <caption class="sr-only">Languages, proficiency level, and where each is used</caption>
           <thead>
-            <tr>
-              <th scope="col">Language</th>
-              <th scope="col">Proficiency</th>
-              <th scope="col">Where it helps</th>
-            </tr>
+            <tr><th scope="col">Language</th><th scope="col">Proficiency</th><th scope="col">Where it helps</th></tr>
           </thead>
           <tbody>
             <tr><th scope="row">Kannada</th><td>Native</td><td>Primary patient-communication language; vernacular health content</td></tr>
@@ -96,12 +127,15 @@
         </table>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p class="site-footer__note">© 2026 Kartik H. · Built and maintained independently.</p>
+    <div class="container site-footer__inner">
+      <p class="faint">© 2026 Kartik H. · Koppal, Karnataka</p>
       <ul class="site-footer__links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
         <li><a href="privacy.html">Privacy</a></li>
         <li><a href="terms.html">Terms</a></li>
         <li><a href="contact.html">Contact</a></li>
