@@ -12,10 +12,11 @@ older file, this file wins — and the older file should be corrected.
 - **LinkedIn:** https://www.linkedin.com/in/kartik-h6
 - **GitHub:** https://github.com/kartik-h6
 - **Portfolio:** https://kartik-h6.github.io/Portfolio
-- **WhatsApp — personal:** +91 91415 42270
-- **WhatsApp — business:** +91 94807 27214
-- Both numbers are his. The personal line is the portfolio default; the business line is
-  the one used on the Digital Setup site.
+- **WhatsApp:** +91 91415 42270 — **this is the only number published on the portfolio.**
+
+A second, business number exists (+91 94807 27214) and is used on the Digital Setup
+site for business enquiries. It is **deliberately not on the portfolio**: anyone
+reaching out through this site comes through the single personal line.
 
 ---
 
@@ -65,3 +66,5 @@ not a certification — keep it separate in any count):
   sunlight). It is not a pharmacology tool.
 - **The site lives at `https://kartik-h6.github.io/Portfolio/`.** An earlier note in this file
   said `https://portfolio.techstudyhubcore.in`; that is superseded.
+- **A sibling repository `kartik-h6.github.io` exists** (created 13 Oct 2026) as a possible
+  migration to clean URLs at the domain root. It is a scaffold and is not the live site.
