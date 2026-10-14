@@ -15,6 +15,15 @@ export const SITE = Object.freeze({
   },
 });
 
+/* --------------------------------------------------------------------------
+   Enhancement flag.
+   Set immediately at module scope — before DOMContentLoaded — so the CSS that
+   hides .reveal elements only ever applies once this script has actually run.
+   If JavaScript is off, or this file fails to load, the flag is never set and
+   the page renders fully visible instead of blank.
+   -------------------------------------------------------------------------- */
+document.documentElement.dataset.enhanced = 'true';
+
 const reduceMotion = () =>
   window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -111,10 +120,17 @@ function ensureLightbox() {
     if (e.target === lb || (e.target.closest && e.target.closest('.lightbox__close'))) close();
   });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
-  lb._close = close;
   return lb;
 }
 
+/* --------------------------------------------------------------------------
+   Scanners.
+   data-expand — opens the image full size in the lightbox (gets a real
+                 button role and label, since it is genuinely interactive).
+   data-reveal — purely decorative desaturate/reveal on hover. It is NOT given
+                 a tabindex or a role: it does nothing for a keyboard user, so
+                 it must not become an unlabelled stop in the tab order.
+   -------------------------------------------------------------------------- */
 function initScanners() {
   const boxes = document.querySelectorAll('.scanner');
   if (!boxes.length) return;
@@ -141,33 +157,23 @@ function initScanners() {
       box.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
       });
-    } else if (box.hasAttribute('data-reveal')) {
-      box.setAttribute('tabindex', '0');
-      const toggle = () => box.classList.toggle('is-revealed');
-      box.addEventListener('click', toggle);
-      box.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
-      });
     }
+    // data-reveal: handled entirely by CSS on hover/focus-within. No JS, no
+    // tabindex — nothing for assistive tech to announce.
   });
 }
 
 /* --------------------------------------------------------------------------
-   Current-page marker + boot
+   Boot
+   The current-page marker is NOT set here: every page already hardcodes
+   aria-current="page" on its own nav link. Doing it twice meant a
+   location.pathname comparison that silently stops matching the moment the
+   site moves to clean URLs like /about/ — so the HTML is the single source.
    -------------------------------------------------------------------------- */
-function markCurrentNav() {
-  const here = location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav-list a').forEach((a) => {
-    if (a.getAttribute('href') === here) a.setAttribute('aria-current', 'page');
-  });
-}
-
 function boot() {
-  markCurrentNav();
   initProgress();
   initCursor();
   initScanners();
-  document.documentElement.dataset.enhanced = 'true';
 }
 
 if (document.readyState === 'loading') {

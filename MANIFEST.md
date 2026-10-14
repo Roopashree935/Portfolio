@@ -1,82 +1,87 @@
-# Asset Manifest — Repository Collection
+# Asset Manifest — repository contents
 
-**Source:** Google Drive → "Portfolio" folder
-**Link:** https://drive.google.com/drive/folders/1Q4H74IroLXvXIfUwr_zxzLZAepc7hgR7
-**Collected:** 13 October 2026
-**Status:** Uploaded — every file listed below is present in this repository
+**Regenerated:** 14 October 2026, from the actual tree at commit `93208a8`.
+This file replaces the earlier collection manifest, which described a layout
+(`assets/profile.*`, `resume/…`) that the repository no longer uses.
 
 ---
 
 ## Repository layout
 
 ```
-assets/
-  profile.png                        current portrait
-  profile.jpg
-  git.keep                           pre-existing placeholder
-certificates/
-  ai-in-pharma-nsqf-l5.pdf
-  bpharm-pdc-certificate.pdf
-  generative-ai-mastermind.pdf
-  good-clinical-practice-nida.pdf
-  google-ai-essentials.pdf
-  google-prompting-essentials.pdf
-  junior-medical-writer-internship.pdf
-  use-ai-as-creative-partner.pdf
-projects/
-  telepharmacy-project.pdf
-  telepharmacy-project-presentation.pdf
-resume/
-  Kartik_H_Resume_2026.pdf
-  Kartik_H_Resume_2026.md
-visuals/
-  bridging-india-translation.png
-  smile-framework.png
-  telepharmacy-infographic.png
+Portfolio/
+├── .nojekyll                      tells GitHub Pages to skip the Jekyll build
+├── 404.html                       custom not-found page
+├── index.html  about.html  projects.html  research.html
+├── knowledge.html  journey.html  contact.html  privacy.html  terms.html
+├── robots.txt  sitemap.xml  manifest.json
+├── README.md  MANIFEST.md  PROFILE-NOTES.md
+│
+├── assets/
+│   ├── css/       style.css  components.css  utilities.css
+│   │              animations.css  contact.css
+│   ├── js/        main.js  navigation.js  theme.js
+│   │              animations.js  contact.js
+│   ├── files/     Kartik_H_CRS_Resume_2026.pdf
+│   │              AI_Patient_Education_Narrative_Review_Report.docx
+│   ├── git.keep   pre-existing placeholder
+│   └── images/
+│       ├── brand/     10 SVG lockups and symbols
+│       ├── favicon/   favicon.ico  favicon.svg  favicon-16/32/48.png
+│       │              apple-touch-icon.png  icon-192.png  icon-512.png
+│       ├── icons/     (.gitkeep)
+│       ├── og/        og-image.png  (1200×630 social card)
+│       ├── profile/   profile.jpg  profile.png
+│       └── projects/  (.gitkeep)
+│
+├── certificates/  8 PDFs
+├── projects/      telepharmacy-project.pdf
+│                  telepharmacy-project-presentation.pdf
+└── visuals/       smile-framework.png
+                   telepharmacy-infographic.png
+                   bridging-india-translation.png
 ```
 
 ---
 
-## Source → repository mapping
+## Certificates (8 files)
 
-| Source file (Google Drive) | Drive file ID | Repository path | Size (bytes) |
+| File | What it is |
+|---|---|
+| `ai-in-pharma-nsqf-l5.pdf` | AI in Pharma — LSSSDC / Skill India, NSQF Level 5 (Mar 2026) |
+| `generative-ai-mastermind.pdf` | Generative AI Mastermind — Outskill (Dec 2025) |
+| `google-ai-essentials.pdf` | Google AI Essentials — Coursera |
+| `google-prompting-essentials.pdf` | Google Prompting Essentials — Coursera |
+| `use-ai-as-creative-partner.pdf` | Use AI as a Creative or Expert Partner — Coursera |
+| `good-clinical-practice-nida.pdf` | Good Clinical Practice — NIDA Clinical Trials Network |
+| `junior-medical-writer-internship.pdf` | YuvaIntern — certificate of experience |
+| `bpharm-pdc-certificate.pdf` | **B.Pharm provisional degree certificate**, RGUHS, exam Oct 2025, reg. 20P3770 |
+
+**Note:** the last file is an academic degree certificate, not a certification.
+The site's "8 Certifications" hero figure counts it; there are **7 actual
+certifications**. Reconcile before publishing the number.
+
+---
+
+## Visual assets
+
+| File | Dimensions | Size | Notes |
 |---|---|---|---|
-| `Kartik's_profile_pic.png` | `1Q8G0LjCpmYE4hEanJHNP-Ylca2S-cazw` | `assets/profile.png` | 2,012,079 |
-| `Kartik's_profile_pic.jpg` | `1HkFLdHB0ZIhpkLfIn4YsPWYGd_AxJlxF` | `assets/profile.jpg` | 445,608 |
-| `AI_IN_PHARMA_certificate_copy.pdf` | `1acINllitG-r1XHdq0un6pvLvGVRwgr-Q` | `certificates/ai-in-pharma-nsqf-l5.pdf` | 264,342 |
-| `PDC_20P3770_01042026101735_copy.pdf` | `1-UVsXWDO1ljIa8Zk0nOqyP_X0aUJ6F_0` | `certificates/bpharm-pdc-certificate.pdf` | 507,673 |
-| `Generative_AI_mastermind_Certificate_copy.pdf` | `17Uan2C8AfndwD6g466xr_99zy_7mlAbV` | `certificates/generative-ai-mastermind.pdf` | 165,320 |
-| `GCP_certificate_copy.pdf` | `1LmYFdxbkcUJwQLzZ2CB8YamTG-UFE_-N` | `certificates/good-clinical-practice-nida.pdf` | 205,369 |
-| `Google AI Essentials.pdf` | `1D65UTjygr8oN9o3afLa4A9jpcxnF2Di0` | `certificates/google-ai-essentials.pdf` | 362,160 |
-| `Google prompting essentials.pdf` | `1RyUSfisyROUfT9DoHUXty3Z7PG8Fe_f_` | `certificates/google-prompting-essentials.pdf` | 361,896 |
-| `Junior Medical writer.pdf` | `1HusYyIZWjfd54z_zkw7maPEx41a4FDTZ` | `certificates/junior-medical-writer-internship.pdf` | 259,449 |
-| `Use AI as creative or expert partner.pdf` | `1MTge0RPWiwehG74181xXZ9Lmn1p-u06U` | `certificates/use-ai-as-creative-partner.pdf` | 293,494 |
-| `Telepharmacy_project_copy.pdf` | `1Dqs_jPdTmeZ5LrqQqVGTZiKEaLJK_o5W` | `projects/telepharmacy-project.pdf` | 1,440,720 |
-| `Telepharmacy_project_ppt_copy.pdf` | `1OpykHqUT4kcNCxD1poJht17bPl7IQ35R` | `projects/telepharmacy-project-presentation.pdf` | 1,570,236 |
-| `Kartik_H_CRS_Resume_2026` (Google Doc → PDF) | `1r04xIvZkIwfXg-XhGewD2tLhSJC7oCgUVvIx4HZA5sI` | `resume/Kartik_H_Resume_2026.pdf` | 99,030 |
-| `Kartik_H_CRS_Resume_2026` (Google Doc → Markdown) | `1r04xIvZkIwfXg-XhGewD2tLhSJC7oCgUVvIx4HZA5sI` | `resume/Kartik_H_Resume_2026.md` | 5,664 |
-| `Bridging India's largest healthcare translation.png` | `1Xb3X41eyniMOmOEp1fOkefb51AZq30Ex` | `visuals/bridging-india-translation.png` | 1,733,646 |
-| `SMILE image.png` | `1xJctFJruOsVTg4l9D2GNyr1ysGxNHX83` | `visuals/smile-framework.png` | 5,664,768 |
-| `Telepharmacy infographic image.png` | `1USdtAuO_kuqlmci7yKawunQ3avAMITha` | `visuals/telepharmacy-infographic.png` | 6,926,632 |
+| `visuals/smile-framework.png` | 1535×2688 | 5.7 MB | Tall portrait infographic; the S.M.I.L.E. visual-communication asset |
+| `visuals/telepharmacy-infographic.png` | 1536×2690 | 6.9 MB | Tall portrait infographic |
+| `visuals/bridging-india-translation.png` | 1408×768 | 1.7 MB | Landscape diagram |
+| `assets/images/og/og-image.png` | 1200×630 | 180 KB | Social preview card |
+| `assets/images/profile/profile.jpg` | 1254×1254 | 435 KB | Portrait actually used by the site |
+| `assets/images/profile/profile.png` | 1254×1254 | 2.0 MB | **Unused** — no page references it |
+
+The three `visuals/` infographics account for almost all of the repository's
+size and are the heaviest thing a visitor downloads. Converting them to WebP
+and serving responsive widths would be the single biggest speed win.
 
 ---
 
-## Intentionally not included
+## Source
 
-These three Drive files were reviewed and deliberately left out of the repository:
-
-- `Kartik's professional photo copy.png` — superseded by `assets/profile.png`.
-- `Sketchart_style_copy.jpg` — not required.
-- `What Next? 2026.pdf` — not required.
-
----
-
-## Notes on classification
-
-- `certificates/bpharm-pdc-certificate.pdf` — the B.Pharm provisional degree certificate
-  (RGUHS, examination held October 2025, register no. 20P3770).
-- `certificates/good-clinical-practice-nida.pdf` — NIDA Clinical Trials Network, six-hour
-  Good Clinical Practice course completion.
-- `certificates/junior-medical-writer-internship.pdf` — YuvaIntern certificate of experience
-  (Junior Medical Writing Intern).
-- Contact details, locations and academic facts are recorded in `PROFILE-NOTES.md`.
+Collected originally from the Google Drive folder
+`1Q4H74IroLXvXIfUwr_zxzLZAepc7hgR7` (13 October 2026). Contact details,
+locations and academic facts are recorded in `PROFILE-NOTES.md`.

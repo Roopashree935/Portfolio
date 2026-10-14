@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/images/profile/profile.jpg" alt="Kartik H." width="720" />
+<img src="assets/images/profile/profile.jpg" alt="KARTIK H" width="720" />
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00c8b4&center=true&vCenter=true&width=760&lines=M.Pharm+(Pharmacy+Practice)+Scholar;Medical+Writing;Clinical+Research;Healthcare+Communication;Digital+Health" alt="Typing SVG" />
@@ -13,7 +13,7 @@
     <img src="https://img.shields.io/badge/Portfolio-kartik--h6.github.io-00c8b4?style=flat-square&logo=google-chrome&logoColor=white" alt="Portfolio">
   </a>
   <a href="https://linkedin.com/in/kartik-h6" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Kartik%20H.-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
+    <img src="https://img.shields.io/badge/LinkedIn-KARTIK%20H-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
   <a href="mailto:kartik.h6822@gmail.com">
     <img src="https://img.shields.io/badge/Email-kartik.h6822@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email">
@@ -105,6 +105,11 @@ Not a footnote. The ability to explain a medicine in the patient's own language 
 - Runs **Digital Setup** — websites and digital systems for local businesses — which funds the free student tools.
 - Deliberately chose not to compete on content volume, paywall student tools, use gamification, sell notes, or fabricate testimonials.
 
+**Academic mentoring & lectures — junior students** · ongoing · offline and online
+
+- Delivered lectures and academic mentoring sessions for junior students across several departments, both in person and online.
+- Supported their academic curriculum — breaking down difficult concepts, exam preparation and study planning.
+
 **Medical Writer — Yuva Intern (Henry Harvin)** · Jul 2026 – Aug 2026
 
 - Junior Medical Writing internship: medical literature research, evidence synthesis, topic development and structured healthcare content planning.
@@ -174,7 +179,7 @@ Presented on nanoparticle drug-delivery systems to a multi-institutional audienc
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=kartik-h6&show_icons=true&theme=tokyonight&count_private=true" alt="Kartik's GitHub stats" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kartik-h6&theme=tokyonight" alt="Kartik's GitHub streak" width="48%" />
+  <img src="https://streak-stats.demolab.com/?user=kartik-h6&theme=tokyonight" alt="Kartik's GitHub streak" width="48%" />
 </p>
 
 <p align="center">

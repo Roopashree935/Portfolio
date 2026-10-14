@@ -3,9 +3,19 @@
    Everything decorative is neutralised under prefers-reduced-motion.
    ========================================================================== */
 
-/* Scroll reveal — .reveal starts hidden, gains .is-visible from animations.js */
-.reveal { opacity: 0; transform: translateY(18px); transition: opacity .65s ease, transform .65s ease; }
-.reveal.is-visible { opacity: 1; transform: none; }
+/* Scroll reveal.
+   The hiding rule is gated on html[data-enhanced], which main.js sets the
+   moment the module executes. If JavaScript is disabled, or the module never
+   loads, that flag is absent — so every .reveal element simply renders
+   visible and no content is lost. Without the gate, a no-JS visitor would see
+   an almost entirely blank page. */
+html[data-enhanced] .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .65s ease, transform .65s ease;
+}
+html[data-enhanced] .reveal.is-visible { opacity: 1; transform: none; }
+
 .reveal--d1 { transition-delay: .08s; }
 .reveal--d2 { transition-delay: .16s; }
 .reveal--d3 { transition-delay: .24s; }
@@ -34,7 +44,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal { opacity: 1; transform: none; transition: none; }
+  html[data-enhanced] .reveal { opacity: 1; transform: none; transition: none; }
   .anim-fade, .anim-float, .anim-pulse, .brand__mark .ring,
   .notfound__mark .nf-cube, .scanner::after, .ticker__track { animation: none !important; }
   .scanner::after { opacity: 0; }
