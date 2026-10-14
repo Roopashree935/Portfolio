@@ -1,0 +1,112 @@
+/* ==========================================================================
+   contact.css — zero-backend reach-out UI
+   ---------------------------------------------------------------------------
+   Two layers, both pure client-side deep links:
+     1. .cta-row  — one-tap buttons carrying a prefilled message
+     2. .composer — a tailored message with a live preview before handoff
+   Nothing is submitted from this page; no form service, no server, no cost.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. One-tap CTAs
+   -------------------------------------------------------------------------- */
+.cta-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: var(--space-s);
+}
+
+.cta {
+  display: inline-flex; align-items: center; justify-content: center; gap: .6rem;
+  padding: .9rem 1.15rem;
+  border: 1px solid var(--line-strong); border-radius: var(--radius);
+  background: var(--surface); color: var(--ink);
+  font-weight: 600; font-size: var(--step--1); text-decoration: none;
+  transition: transform var(--transition), border-color var(--transition),
+              color var(--transition), filter var(--transition), background var(--transition);
+}
+.cta:hover {
+  transform: translateY(-2px); text-decoration: none;
+  border-color: var(--accent); color: var(--accent);
+}
+.cta svg { flex: none; }
+
+/* WhatsApp gets its own recognisable green — a functional affordance, not brand.
+   Dark ink on bright green keeps contrast high in both themes. */
+.cta--wa {
+  background: linear-gradient(135deg, #25d366, #1fbf5c);
+  border-color: transparent; color: #04240f;
+  box-shadow: 0 14px 30px -18px rgba(37, 211, 102, .85);
+}
+.cta--wa:hover {
+  color: #04240f; border-color: transparent; filter: brightness(1.06);
+}
+.cta--block { width: 100%; }
+
+/* --------------------------------------------------------------------------
+   2. Composer
+   -------------------------------------------------------------------------- */
+.composer {
+  display: grid; grid-template-columns: 1.05fr .95fr;
+  border: 1px solid var(--line); border-radius: var(--radius-l);
+  background: var(--surface); overflow: hidden;
+}
+.composer__form {
+  padding: var(--space-xl); display: grid; gap: var(--space-m); align-content: start;
+}
+.composer__preview {
+  padding: var(--space-xl); display: grid; gap: var(--space-m); align-content: start;
+  background: var(--bg-soft); border-inline-start: 1px solid var(--line);
+}
+@media (max-width: 860px) {
+  .composer { grid-template-columns: 1fr; }
+  .composer__preview { border-inline-start: 0; border-top: 1px solid var(--line); }
+}
+
+.field { display: grid; gap: .4rem; }
+.field > label, .field__label {
+  font-family: var(--font-mono); font-size: var(--step--2);
+  letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+}
+.field input, .field textarea, .field select {
+  width: 100%; padding: .7rem .85rem;
+  border: 1px solid var(--line-strong); border-radius: var(--radius-s);
+  background: var(--bg); color: var(--ink); font-size: var(--step--1);
+  transition: border-color var(--transition), background var(--transition), box-shadow var(--transition);
+}
+.field input::placeholder, .field textarea::placeholder { color: var(--faint); }
+.field input:focus, .field textarea:focus, .field select:focus {
+  outline: none; border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent);
+}
+.field textarea { resize: vertical; min-height: 84px; font-family: var(--font-body); }
+.field__hint { font-size: var(--step--2); color: var(--faint); line-height: 1.55; margin: 0; }
+
+/* intent chips */
+.chips { display: flex; flex-wrap: wrap; gap: var(--space-xs); }
+.chip {
+  padding: .4rem .8rem; border-radius: var(--radius-pill);
+  border: 1px solid var(--line); background: var(--surface);
+  color: var(--muted); font-size: var(--step--2); font-weight: 500;
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+.chip:hover { color: var(--ink); border-color: var(--line-strong); }
+.chip[aria-pressed="true"] {
+  color: var(--accent); border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+/* live preview — same mono vocabulary as the site's readout panels */
+.preview-head {
+  display: flex; align-items: center; gap: .45rem;
+  font-family: var(--font-mono); font-size: var(--step--2);
+  letter-spacing: .12em; text-transform: uppercase; color: var(--accent);
+}
+.preview {
+  font-family: var(--font-mono); font-size: var(--step--2); line-height: 1.75;
+  white-space: pre-wrap; overflow-wrap: break-word;
+  padding: var(--space-m); border-radius: var(--radius);
+  background: var(--bg); border: 1px dashed var(--line-strong);
+  color: var(--muted); min-height: 132px; margin: 0;
+}
