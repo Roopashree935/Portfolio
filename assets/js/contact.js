@@ -1,19 +1,17 @@
 /* ==========================================================================
    contact.js — builds the prefilled WhatsApp / email deep links
    ---------------------------------------------------------------------------
-   Step 1 is who is reaching out; step 2 is their details; the line they send
-   to is a refinement inside the composer, not a way around it. The send
-   buttons stay inert until a role is chosen.
+   Step 1 is who is reaching out; step 2 is their details. The send buttons
+   stay inert until a role is chosen, so the CTAs cannot be used to bypass the
+   form. Zero backend: nothing is submitted here — the visitor reviews the
+   message and sends it from their own WhatsApp or mail client.
 
-   Two numbers, both real: a personal line and a business line. Email is one
-   inbox. Zero backend — nothing is submitted here.
+   ONE number only. The portfolio routes every enquiry through a single line;
+   the separate business line belongs to the Digital Setup site, not here.
    ========================================================================== */
 
-/* Change numbers in ONE place. Digits only, with country code, no "+". */
-const LINES = {
-  personal: { label: "Personal line", number: "919141542270", display: "+91 91415 42270" },
-  business: { label: "Business line", number: "919480727214", display: "+91 94807 27214" }
-};
+/* Change the number in ONE place. Digits only, with country code, no "+". */
+const WA_NUMBER = "919141542270";
 const EMAIL = "kartik.h6822@gmail.com";
 const SITE = "kartik-h6.github.io/Portfolio";
 
@@ -25,8 +23,7 @@ const ROLES = {
   other:      { label: "Something else",              line: "I'd like to connect about something else." }
 };
 
-let currentRole = null;         // nothing chosen until the visitor chooses
-let currentLine = "personal";   // personal line is the portfolio default
+let currentRole = null;   // nothing is chosen until the visitor chooses
 const $ = (id) => document.getElementById(id);
 
 function buildMessage() {
@@ -62,34 +59,22 @@ function render() {
   preview.dataset.empty = "false";
   preview.textContent = msg;
 
-  $("send-wa").href = "https://wa.me/" + LINES[currentLine].number + "?text=" + encodeURIComponent(msg);
+  $("send-wa").href = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);
   $("send-mail").href =
     "mailto:" + EMAIL +
     "?subject=" + encodeURIComponent("Portfolio \u2014 " + ROLES[currentRole].label) +
     "&body=" + encodeURIComponent(msg);
-
-  const note = $("line-note");
-  if (note) note.textContent = "Sending to the " + LINES[currentLine].label.toLowerCase() + " — " + LINES[currentLine].display;
 
   gate(true);
 }
 
 function init() {
   const roleChips = Array.from(document.querySelectorAll(".chip[data-role]"));
-  const lineChips = Array.from(document.querySelectorAll(".chip[data-line]"));
 
   roleChips.forEach((chip) => {
     chip.addEventListener("click", () => {
       currentRole = chip.dataset.role;
       roleChips.forEach((c) => c.setAttribute("aria-pressed", String(c === chip)));
-      render();
-    });
-  });
-
-  lineChips.forEach((chip) => {
-    chip.addEventListener("click", () => {
-      currentLine = chip.dataset.line;
-      lineChips.forEach((c) => c.setAttribute("aria-pressed", String(c === chip)));
       render();
     });
   });

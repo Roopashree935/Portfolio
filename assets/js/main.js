@@ -96,7 +96,7 @@ function initCursor() {
 }
 
 /* --------------------------------------------------------------------------
-   Lightbox — tap a tall infographic to read it full size.
+   Lightbox — opens a tall infographic at a readable size and lets it scroll.
    -------------------------------------------------------------------------- */
 function ensureLightbox() {
   let lb = document.getElementById('lightbox');
@@ -125,11 +125,11 @@ function ensureLightbox() {
 
 /* --------------------------------------------------------------------------
    Scanners.
-   data-expand — opens the image full size in the lightbox (gets a real
-                 button role and label, since it is genuinely interactive).
-   data-reveal — purely decorative desaturate/reveal on hover. It is NOT given
-                 a tabindex or a role: it does nothing for a keyboard user, so
-                 it must not become an unlabelled stop in the tab order.
+   data-expand — opens the image full size in the scrollable lightbox. It is a
+                 real control, so it gets role=button, a tabindex and a label.
+   data-reveal — a decorative desaturate/reveal. It gets a CLICK toggle so it
+                 works on touch (where :hover never fires), but no tabindex or
+                 role: it is not a control and must not be a focus stop.
    -------------------------------------------------------------------------- */
 function initScanners() {
   const boxes = document.querySelectorAll('.scanner');
@@ -143,13 +143,14 @@ function initScanners() {
     if (box.hasAttribute('data-expand')) {
       box.setAttribute('role', 'button');
       box.setAttribute('tabindex', '0');
-      box.setAttribute('aria-label', (img.alt || 'Image') + ' — activate to enlarge');
+      box.setAttribute('aria-label', (img.alt || 'Image') + ' — activate to view full size');
 
       const open = () => {
         const big = lb.querySelector('img');
         big.src = img.currentSrc || img.src;
         big.alt = img.alt || '';
         lb.dataset.open = 'true';
+        lb.scrollTop = 0;
         document.documentElement.style.overflow = 'hidden';
         lb.querySelector('.lightbox__close').focus();
       };
@@ -157,18 +158,17 @@ function initScanners() {
       box.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
       });
+    } else if (box.hasAttribute('data-reveal')) {
+      // touch has no hover — let a tap toggle the reveal
+      box.addEventListener('click', () => box.classList.toggle('is-revealed'));
     }
-    // data-reveal: handled entirely by CSS on hover/focus-within. No JS, no
-    // tabindex — nothing for assistive tech to announce.
   });
 }
 
 /* --------------------------------------------------------------------------
    Boot
    The current-page marker is NOT set here: every page already hardcodes
-   aria-current="page" on its own nav link. Doing it twice meant a
-   location.pathname comparison that silently stops matching the moment the
-   site moves to clean URLs like /about/ — so the HTML is the single source.
+   aria-current="page" on its own nav link, so the HTML is the single source.
    -------------------------------------------------------------------------- */
 function boot() {
   initProgress();

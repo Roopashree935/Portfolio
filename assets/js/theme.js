@@ -2,13 +2,13 @@
    theme.js — colour theme with persistence
    Reads/writes data-theme on <html>.
 
-   Defaults to DARK: this brand is dark-first (cyan-on-slate), so we do not
+   Defaults to DARK: this brand is dark-first (cyan-on-indigo), so we do not
    follow the OS preference on a first visit — a light OS setting would
-   otherwise flip the whole site. The toggle lets anyone choose light, and
-   that choice is remembered.
+   otherwise flip the whole site.
 
-   The button label always states the mode you would switch TO, so the
-   control is self-explanatory without an icon.
+   The control is a sun/moon symbol drawn in CSS from data-theme, so this file
+   only maintains the accessible name and pressed state. The button's own text
+   stays in the DOM as a fallback but is collapsed to zero size by CSS.
    ========================================================================== */
 
 const STORAGE_KEY = 'kh-theme';
@@ -26,9 +26,9 @@ function apply(theme) {
 
   document.querySelectorAll('[data-theme-toggle]').forEach((btn) => {
     const next = theme === 'light' ? 'dark' : 'light';
-    btn.textContent = next === 'light' ? 'Light mode' : 'Dark mode';
     btn.setAttribute('aria-pressed', String(theme === 'light'));
     btn.setAttribute('aria-label', `Switch to ${next} theme`);
+    btn.setAttribute('title', `Switch to ${next} theme`);
   });
 }
 
