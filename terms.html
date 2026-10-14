@@ -29,7 +29,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap">
 
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -44,8 +44,8 @@
       <a class="brand" href="index.html">
         <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
           <defs><linearGradient id="navGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#00f3ff"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient></defs>
-          <polygon points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#navGrad)" stroke-width="6" stroke-linejoin="round"/>
-          <g stroke="url(#navGrad)" stroke-width="5" fill="none" stroke-linejoin="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
+          <polygon class="ring" points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#navGrad)" stroke-width="5" stroke-linejoin="round"/>
+          <g stroke="url(#navGrad)" stroke-width="4" fill="none" stroke-linejoin="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
         </svg>
         Kartik&nbsp;H.
       </a>
@@ -64,19 +64,47 @@
 
   <main id="main" class="page">
     <section class="section" aria-labelledby="page-title">
-      <div class="container">
+      <div class="container measure reveal">
         <p class="eyebrow">Legal</p>
         <h1 id="page-title">Terms of use</h1>
-        <!-- TODO: content ownership, permitted use, third-party links, disclaimer (not medical advice) -->
-        <p class="muted">Last updated: <time datetime="2026-10-13">13 October 2026</time></p>
+        <p class="faint mt-s">Last updated: <time datetime="2026-10-14">14 October 2026</time></p>
+
+        <div class="stack--l mt-xl">
+          <div>
+            <h3>Ownership</h3>
+            <p class="muted">All written content, research documents, visual frameworks and the S.M.I.L.E. framework on this site are my own work unless credited otherwise. The TechStudyHub Core mark is used with the permission of its owner.</p>
+          </div>
+          <div>
+            <h3>What you may do</h3>
+            <p class="muted">You are welcome to read, quote and cite this site for academic, educational or professional purposes, with attribution. You may link to any page freely. You may not republish substantial portions as your own work, or use the content or visual frameworks commercially without written permission.</p>
+          </div>
+          <div>
+            <h3>Not medical advice</h3>
+            <p class="muted"><strong>Nothing on this site is medical advice.</strong> The content is educational and reflects my own academic work and reading. It is not a substitute for consultation with a qualified healthcare professional, and no doctor–patient or pharmacist–patient relationship is created by your use of this site.</p>
+          </div>
+          <div>
+            <h3>Accuracy</h3>
+            <p class="muted">I aim to keep everything accurate and current, but I make no warranty that it is complete or error-free, and I may update or remove content without notice. Figures and findings quoted from my research are as reported in the source documents.</p>
+          </div>
+          <div>
+            <h3>External links</h3>
+            <p class="muted">Links to third-party sites (LinkedIn, GitHub, TechStudyHubCore and others) are provided for convenience. I am not responsible for their content or their practices.</p>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <p class="muted">For permissions or questions: <a href="mailto:kartik.h6822@gmail.com">kartik.h6822@gmail.com</a>.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p class="site-footer__note">© 2026 Kartik H. · Built and maintained independently.</p>
+    <div class="container site-footer__inner">
+      <p class="faint">© 2026 Kartik H. · Koppal, Karnataka</p>
       <ul class="site-footer__links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
         <li><a href="privacy.html">Privacy</a></li>
         <li><a href="terms.html">Terms</a></li>
         <li><a href="contact.html">Contact</a></li>

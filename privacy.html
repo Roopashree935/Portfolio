@@ -29,7 +29,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap">
 
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -44,8 +44,8 @@
       <a class="brand" href="index.html">
         <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
           <defs><linearGradient id="navGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#00f3ff"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient></defs>
-          <polygon points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#navGrad)" stroke-width="6" stroke-linejoin="round"/>
-          <g stroke="url(#navGrad)" stroke-width="5" fill="none" stroke-linejoin="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
+          <polygon class="ring" points="50,5 88,27 88,73 50,95 12,73 12,27" fill="none" stroke="url(#navGrad)" stroke-width="5" stroke-linejoin="round"/>
+          <g stroke="url(#navGrad)" stroke-width="4" fill="none" stroke-linejoin="round"><polygon points="50,28 68,38 50,48 32,38"/><polygon points="32,38 50,48 50,68 32,58"/><polygon points="68,38 50,48 50,68 68,58"/></g>
         </svg>
         Kartik&nbsp;H.
       </a>
@@ -64,19 +64,43 @@
 
   <main id="main" class="page">
     <section class="section" aria-labelledby="page-title">
-      <div class="container">
+      <div class="container measure reveal">
         <p class="eyebrow">Legal</p>
         <h1 id="page-title">Privacy notice</h1>
-        <!-- TODO: what data is collected (analytics, forms), purpose, retention, contact -->
-        <p class="muted">Last updated: <time datetime="2026-10-13">13 October 2026</time></p>
+        <p class="faint mt-s">Last updated: <time datetime="2026-10-14">14 October 2026</time></p>
+
+        <div class="stack--l mt-xl">
+          <div>
+            <h3>What this site collects</h3>
+            <p class="muted">This is a static personal portfolio. It has <strong>no accounts, no sign-up, no contact form and no advertising</strong>. I do not run analytics or tracking scripts, and I do not set marketing cookies.</p>
+          </div>
+          <div>
+            <h3>Data you send me directly</h3>
+            <p class="muted">If you email me or contact me on LinkedIn, I receive whatever you choose to send — your name, email address and message. I use it only to reply and to follow up on the conversation. I do not sell it, share it, or add you to any mailing list.</p>
+          </div>
+          <div>
+            <h3>Third-party services</h3>
+            <p class="muted">The site loads web fonts from Google Fonts and is hosted on GitHub Pages. Those providers may record standard technical request data such as your IP address and browser type as part of serving the page. Documents and links to external sites (LinkedIn, GitHub, TechStudyHubCore) are governed by those sites' own privacy policies.</p>
+          </div>
+          <div>
+            <h3>Your choices</h3>
+            <p class="muted">You can browse the entire site without providing any personal information. If you have contacted me and would like your messages deleted, email me and I will remove them.</p>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <p class="muted">Questions about this notice: <a href="mailto:kartik.h6822@gmail.com">kartik.h6822@gmail.com</a>.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p class="site-footer__note">© 2026 Kartik H. · Built and maintained independently.</p>
+    <div class="container site-footer__inner">
+      <p class="faint">© 2026 Kartik H. · Koppal, Karnataka</p>
       <ul class="site-footer__links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
         <li><a href="privacy.html">Privacy</a></li>
         <li><a href="terms.html">Terms</a></li>
         <li><a href="contact.html">Contact</a></li>
