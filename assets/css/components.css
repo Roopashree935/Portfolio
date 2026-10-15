@@ -31,6 +31,7 @@
 .nav-list a {
   color: var(--muted); text-decoration: none;
   font-size: var(--step--1); font-weight: 500;
+  display: inline-flex; align-items: center; min-height: 24px;
   padding-block: .3rem;
   border-bottom: 1.5px solid transparent;
   transition: color var(--transition), border-color var(--transition);
@@ -420,7 +421,10 @@ a.card:hover { text-decoration: none; }
 /* --------------------------------------------------------------------------
    Data table (languages / clinical asset)
    -------------------------------------------------------------------------- */
-.table { width: 100%; border-collapse: collapse; font-size: var(--step--1); margin-top: var(--space-l); }
+/* A data table is the one thing that legitimately cannot reflow to 320px, so
+   it scrolls inside its own box rather than pushing the whole page sideways. */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: var(--space-l); }
+.table { width: 100%; border-collapse: collapse; font-size: var(--step--1); }
 .table caption { text-align: start; color: var(--muted); padding-bottom: var(--space-s); }
 .table th, .table td {
   text-align: start; padding: .8rem .9rem;
@@ -432,6 +436,13 @@ a.card:hover { text-decoration: none; }
 }
 .table tbody th { font-family: var(--font-display); font-weight: 600; color: var(--ink); white-space: nowrap; }
 .table tbody tr:hover { background: color-mix(in srgb, var(--accent) 7%, transparent); }
+
+/* narrow screens: let the table actually fit instead of only just scrolling */
+@media (max-width: 560px) {
+  .table th, .table td { padding: .6rem .55rem; }
+  .table tbody th { white-space: normal; }
+  .table thead th { letter-spacing: .08em; }
+}
 
 /* --------------------------------------------------------------------------
    Timeline (journey)
@@ -517,7 +528,10 @@ a.card:hover { text-decoration: none; }
   align-items: center; justify-content: space-between;
 }
 .site-footer__links { display: flex; flex-wrap: wrap; gap: var(--space-l); }
-.site-footer__links a { color: var(--muted); text-decoration: none; }
+.site-footer__links a {
+  color: var(--muted); text-decoration: none;
+  display: inline-flex; align-items: center; min-height: 24px;
+}
 .site-footer__links a:hover { color: var(--accent); }
 
 /* --------------------------------------------------------------------------
