@@ -37,9 +37,9 @@ Portfolio/
 ├── certificates/  8 PDFs
 ├── projects/      telepharmacy-project.pdf
 │                  telepharmacy-project-presentation.pdf
-└── visuals/       smile-framework.{png,webp}
-                   telepharmacy-infographic.{png,webp}
-                   bridging-india-translation.{png,webp}
+└── visuals/       smile-framework.webp
+                   telepharmacy-infographic.webp
+                   bridging-india-translation.webp
 ```
 
 **Note:** `assets/images/profile/profile.png` (2 MB, referenced by no page) was
@@ -68,24 +68,22 @@ Education on `journey.html`.
 
 ## Visual assets
 
-Each infographic is stored twice: a PNG original and a WebP served to browsers.
-The pages use `<picture>` with the WebP as source and the PNG as fallback, so the
-PNG is never downloaded by a modern browser but remains available.
+Each infographic is stored once, as WebP. The PNG originals were removed from the
+repository, so there is no separate PNG fallback: the pages reference the WebP in
+both the `<picture>` source and the `<img>`. WebP is supported by all current
+browsers.
 
 | File | Dimensions | Size | Notes |
 |---|---|---|---|
 | `visuals/smile-framework.webp` | 1535×2688 | 0.26 MB | **Served.** S.M.I.L.E. visual-communication asset |
-| `visuals/smile-framework.png` | 1535×2688 | 5.40 MB | Fallback original |
 | `visuals/telepharmacy-infographic.webp` | 1536×2690 | 0.49 MB | **Served** |
-| `visuals/telepharmacy-infographic.png` | 1536×2690 | 6.61 MB | Fallback original |
 | `visuals/bridging-india-translation.webp` | 1408×768 | 0.22 MB | **Served** |
-| `visuals/bridging-india-translation.png` | 1408×768 | 1.65 MB | Fallback original |
 | `assets/images/og/og-image.png` | 1200×630 | 180 KB | Social preview card |
 | `assets/images/profile/profile.jpg` | 1254×1254 | 435 KB | Portrait used by the site |
 
 Served payload for the three infographics is **~0.97 MB**, down from ~13.7 MB
-(93% smaller) at full resolution. The repository itself still carries the PNG
-originals, so total repo size is roughly unchanged.
+(93% smaller) at full resolution. The PNG originals are no longer in the
+repository, so the repository is correspondingly smaller.
 
 ---
 
