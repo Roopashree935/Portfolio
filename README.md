@@ -12,7 +12,7 @@
   <a href="https://kartik-h6.github.io/Portfolio/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-kartik--h6.github.io-00c8b4?style=flat-square&logo=google-chrome&logoColor=white" alt="Portfolio">
   </a>
-  <a href="https://linkedin.com/in/kartik-h6" target="_blank">
+  <a href="https://www.linkedin.com/in/kartik-h6" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-KARTIK%20H-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
   <a href="mailto:kartik.h6822@gmail.com">
@@ -36,7 +36,7 @@ I'm pursuing my **M.Pharm in Pharmacy Practice** at the **Raghavendra Institute 
 
 My work is driven by one question: **how can healthcare knowledge be communicated, organised and translated into understanding that helps people make better decisions — and ultimately improves health outcomes?**
 
-Healthcare rarely suffers from a lack of information. It suffers from the gap between information and understanding. That observation shapes everything I do — currently building **TechStudyHubCore**, an initiative creating structured learning systems, educational resources and technology-assisted solutions that make complex healthcare knowledge more accessible and actionable.
+Healthcare rarely suffers from a lack of information. It suffers from the gap between information and understanding. That observation shapes everything I do — currently building **[PMAS](https://github.com/kartik-h6/PMAS)**, an offline-first telepharmacy platform for rural and remote chronic care, and working on **Digital Setup** as freelance digital infrastructure for local businesses.
 
 I see technology not as a replacement for healthcare professionals, but as a tool for improving how knowledge is communicated, understood and applied — through visual frameworks, structured learning pathways and AI-assisted systems. As I progress through my M.Pharm, I want to investigate these questions through research, practical projects and collaboration with clinicians, educators and health-technology professionals.
 
@@ -99,11 +99,17 @@ Not a footnote. The ability to explain a medicine in the patient's own language 
 
 ## 💼 Experience
 
-**Founder & Builder — TechStudyHubCore** · Apr 2026 – present · Koppal, Karnataka
+**Founder & Builder — TechStudyHubCore** · Apr 2026 – 2026 · now archived
 
-- Built a gateway of focused student tools rather than another content platform: a **CGPA/SGPA calculator built on the official PCI 2026 B.Pharm syllabus** (real credit values and classification thresholds), a career navigator, and a gateway linking SSLC Hub, Pharmacy Hub and Digital Setup.
-- Runs **Digital Setup** — websites and digital systems for local businesses — which funds the free student tools.
+- Built, alone, a learning ecosystem for pharmacy, nursing and school-level students: a root gateway, a structured B.Pharm architecture, SSLC content, a **CGPA/SGPA calculator built on the official PCI 2026 B.Pharm syllabus**, and a career navigator.
 - Deliberately chose not to compete on content volume, paywall student tools, use gamification, sell notes, or fabricate testimonials.
+- **Retired it.** Alongside M.Pharm and PMAS the ecosystem became too broad for one person to maintain responsibly; a team was hoped for but never formed. The engineering record is [archived](https://github.com/kartik-h6/techstudyhubcore-archive) rather than left to decay.
+
+**Digital Setup — freelance** · ongoing
+
+- Builds local businesses a digital presence they own: landing page, WhatsApp contact, Google and maps presence, and the local search basics that make a business findable.
+- The proposition is deliberately not software — a **one-time build** instead of an expensive subscription with a recurring monthly bill, maintained on the owner's own domain.
+- Sells the outcome rather than the artefact: enquiries, trust and visibility.
 
 **Academic mentoring & lectures — junior students** · ongoing · offline and online
 
@@ -148,7 +154,7 @@ Not a footnote. The ability to explain a medicine in the patient's own language 
 
 **Telepharmacy — Comparative Literature Review (2025)**
 
-*"Patient Satisfaction and Counseling Effectiveness in Telepharmacy: A Comparative Literature Review of Remote vs. Face-to-Face"* — RGUHS final-year dissertation. Satisfaction came out high in both models (**4.2 remote vs 4.5 face-to-face**), but trust and emotional reassurance still leaned toward in-person care — which reframed the question as *which mode suits a given patient at a given point in the care journey*, rather than which model wins.
+*"Patient Satisfaction and Counseling Effectiveness in Telepharmacy: A Comparative Literature Review of Remote vs. Face-to-Face"* — RGUHS final-year dissertation, carried out individually from literature search through to presentation. Satisfaction came out high in both models (**4.2 remote vs 4.5 face-to-face**), but trust and emotional reassurance still leaned toward in-person care — which reframed the question as *which mode suits a given patient at a given point in the care journey*, rather than which model wins.
 
 **Medical writing sample — AI Patient Education Narrative Review**
 
@@ -168,10 +174,10 @@ Presented on nanoparticle drug-delivery systems to a multi-institutional audienc
 
 | Repository | What it is |
 |---|---|
-| **[PMAS](https://github.com/kartik-h6/PMAS)** | Pharmacist-led Medication & Adherence Support — an independent telepharmacy research project: offline-first, five-language (EN/TE/KN/TA/HI) patient PWA, pharmacist portal and FastAPI backend, built for rural and remote chronic care. |
-| **[Portfolio](https://github.com/kartik-h6/Portfolio)** | Source for my portfolio site — [kartik-h6.github.io/Portfolio](https://kartik-h6.github.io/Portfolio/) |
+| **[PMAS](https://github.com/kartik-h6/PMAS)** | Pharmacist-led Medication & Adherence Support — an independent telepharmacy build, offline-first, five-language (EN/TE/KN/TA/HI) patient PWA, pharmacist portal and FastAPI backend, for rural and remote chronic care. |
+| **[techstudyhubcore-archive](https://github.com/kartik-h6/techstudyhubcore-archive)** | The archived engineering record of the TechStudyHubCore ecosystem — what it was, what was built, and why the public infrastructure was retired. |
 | **[SGPA-CGPA-CALCULATOR](https://github.com/kartik-h6/SGPA-CGPA-CALCULATOR)** | CGPA/SGPA calculator built on the official PCI 2026 B.Pharm syllabus — real credit values and classification thresholds. |
-| **[digital-setup](https://github.com/kartik-h6/digital-setup)** | Websites and digital systems built for local businesses — the work that funds the free student tools. |
+| **[digital-setup](https://github.com/kartik-h6/digital-setup)** | Freelance digital infrastructure for local businesses — one-time builds on the owner's own domain, instead of recurring software subscriptions. |
 
 ---
 
@@ -193,7 +199,7 @@ Presented on nanoparticle drug-delivery systems to a multi-institutional audienc
 Let's talk about clinical communication, vernacular health education, or building patient-facing systems.
 
 <p align="left">
-  <a href="https://linkedin.com/in/kartik-h6" target="_blank">
+  <a href="https://www.linkedin.com/in/kartik-h6" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="https://kartik-h6.github.io/Portfolio/" target="_blank">
