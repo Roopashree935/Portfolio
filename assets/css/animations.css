@@ -4,17 +4,28 @@
    ========================================================================== */
 
 /* Scroll reveal.
-   The hiding rule is gated on html[data-enhanced], which main.js sets the
-   moment the module executes. If JavaScript is disabled, or the module never
-   loads, that flag is absent — so every .reveal element simply renders
-   visible and no content is lost. Without the gate, a no-JS visitor would see
-   an almost entirely blank page. */
-html[data-enhanced] .reveal {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity .65s ease, transform .65s ease;
+   ---------------------------------------------------------------------------
+   Three requirements, and the order matters:
+
+   1. No flicker. The hide must apply from the FIRST paint, so the rule cannot
+      depend on a flag that JavaScript sets later — that would paint the page
+      visible, then hide it, then animate it back in.
+   2. Content must survive JavaScript being disabled. `@media (scripting:
+      enabled)` is a static media query evaluated before paint, so with JS off
+      it never matches and nothing is hidden.
+   3. Content must survive the module failing to load. If animations.js 404s,
+      nothing would ever add .is-visible. The failsafe below reveals everything
+      after 2s — and it is cancelled the moment main.js sets data-enhanced, so
+      it never interferes with the real reveal.
+   --------------------------------------------------------------------------- */
+@media (scripting: enabled) {
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .65s ease, transform .65s ease; }
+  .reveal.is-visible { opacity: 1; transform: none; }
 }
-html[data-enhanced] .reveal.is-visible { opacity: 1; transform: none; }
+
+/* Failsafe: only in the window before the enhancement module has run. */
+html:not([data-enhanced]) .reveal { animation: reveal-failsafe 0s 2s forwards; }
+@keyframes reveal-failsafe { to { opacity: 1; transform: none; } }
 
 .reveal--d1 { transition-delay: .08s; }
 .reveal--d2 { transition-delay: .16s; }
@@ -44,7 +55,7 @@ html[data-enhanced] .reveal.is-visible { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  html[data-enhanced] .reveal { opacity: 1; transform: none; transition: none; }
+  .reveal, .reveal.is-visible { opacity: 1; transform: none; transition: none; }
   .anim-fade, .anim-float, .anim-pulse, .brand__mark .ring,
   .notfound__mark .nf-cube, .scanner::after, .ticker__track { animation: none !important; }
   .scanner::after { opacity: 0; }
