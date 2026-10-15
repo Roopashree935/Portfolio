@@ -15,16 +15,17 @@
       it never matches and nothing is hidden.
    3. Content must survive the module failing to load. If animations.js 404s,
       nothing would ever add .is-visible. The failsafe below reveals everything
-      after 2s — and it is cancelled the moment main.js sets data-enhanced, so
-      it never interferes with the real reveal.
+      after 2s. It is cancelled by animations.js itself (via data-reveal-ready),
+      NOT by main.js — gating it on a different module's flag would let a failed
+      animations.js be cancelled by a working main.js and leave the page blank.
    --------------------------------------------------------------------------- */
 @media (scripting: enabled) {
   .reveal { opacity: 0; transform: translateY(18px); transition: opacity .65s ease, transform .65s ease; }
   .reveal.is-visible { opacity: 1; transform: none; }
 }
 
-/* Failsafe: only in the window before the enhancement module has run. */
-html:not([data-enhanced]) .reveal { animation: reveal-failsafe 0s 2s forwards; }
+/* Failsafe: applies only until animations.js has announced itself. */
+html:not([data-reveal-ready]) .reveal { animation: reveal-failsafe 0s 2s forwards; }
 @keyframes reveal-failsafe { to { opacity: 1; transform: none; } }
 
 .reveal--d1 { transition-delay: .08s; }

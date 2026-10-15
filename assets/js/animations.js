@@ -3,6 +3,13 @@
    Adds .is-visible to .reveal elements as they enter the viewport.
    ========================================================================== */
 
+/* This module owns the flag that cancels the CSS failsafe. If this file never
+   runs, the flag stays absent and animations.css reveals everything after 2s —
+   so a failed module can never leave the page blank. Deliberately NOT main.js:
+   if main.js loaded but this file did not, a main.js flag would cancel the
+   failsafe and the content would stay hidden forever. */
+document.documentElement.dataset.revealReady = 'true';
+
 const targets = document.querySelectorAll('.reveal');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
