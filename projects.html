@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects — KARTIK H</title>
-  <meta name="description" content="Projects by KARTIK H — PMAS telepharmacy adherence platform, TechStudyHubCore learning tools, portfolio platform and digital services.">
+  <meta name="description" content="Projects by KARTIK H — PMAS telepharmacy adherence platform, the archived TechStudyHubCore ecosystem, the telepharmacy dissertation, and Digital Setup freelance work.">
   <link rel="canonical" href="https://kartik-h6.github.io/Portfolio/projects.html">
   <meta name="theme-color" content="#020617">
   <meta name="color-scheme" content="dark light">
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="KARTIK H">
   <meta property="og:title" content="Projects — KARTIK H">
-  <meta property="og:description" content="Telepharmacy, health-education and digital-health projects.">
+  <meta property="og:description" content="Deployed work, an archived ecosystem, a dissertation, and freelance digital infrastructure.">
   <meta property="og:url" content="https://kartik-h6.github.io/Portfolio/projects.html">
   <meta property="og:image" content="https://kartik-h6.github.io/Portfolio/assets/images/og/og-image.png">
   <meta property="og:image:type" content="image/png">
@@ -58,7 +58,7 @@
         <li><a href="journey.html">Journey</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour theme">Dark mode</button>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme">Dark mode</button>
     </nav>
   </header>
 
@@ -68,54 +68,59 @@
       <div class="container">
         <div class="section-head reveal">
           <p class="eyebrow">Projects</p>
-          <h1 id="page-title">Things that exist and run</h1>
-          <p class="lead">Live platforms, research artefacts and digital systems — built end to end, from the problem statement to the deployed URL.</p>
+          <h1 id="page-title">What I built, and where each one stands</h1>
+          <p class="lead">Deployed where it runs, archived where it stopped, and research where it was studied. I'd rather show the real status of each than imply four live products.</p>
         </div>
 
         <div class="grid grid--2">
 
           <article class="card card--hover card--feature reveal reveal--d1">
-            <p class="card__meta">Telepharmacy · Research platform</p>
+            <p class="card__meta">Telepharmacy · Deployed</p>
             <h3>PMAS — Pharmacist-led Medication &amp; Adherence Support</h3>
-            <p>An independent telepharmacy research project: an offline-first, five-language (EN/TE/KN/TA/HI) patient app, a pharmacist portal and an API backend — designed for rural and remote chronic care, where connectivity and language are the two things that break adherence.</p>
+            <p>An independent telepharmacy build, not attached to any institution: an offline-first, five-language (EN/TE/KN/TA/HI) patient PWA, a pharmacist portal and a FastAPI backend. The privacy model separates identifiable patient records from de-identified clinical data by design, so the two are never stored together.</p>
+            <p>The counselling text is written by a pharmacist in plain language rather than machine-translated — the point being that translating "twice daily after food" into Telugu changes the language but not the comprehension.</p>
+            <p class="faint">Status: deployed and working as a demo. Not in clinical use, and no patient data has been collected.</p>
             <div class="pills">
-              <span class="pill">Offline-first</span><span class="pill">5 languages</span><span class="pill">Patient PWA</span><span class="pill">Pharmacist portal</span>
+              <span class="pill pill--live">Deployed</span><span class="pill">Offline-first</span><span class="pill">5 languages</span><span class="pill">Patient PWA</span><span class="pill">Pharmacist portal</span>
             </div>
             <p class="hero__actions">
-              <a class="btn btn--sm btn--primary" href="https://kartik-h6.github.io/PMAS/" target="_blank" rel="noopener">Live site</a>
+              <a class="btn btn--sm btn--primary" href="https://kartik-h6.github.io/PMAS/" target="_blank" rel="noopener">Live site + demo</a>
               <a class="btn btn--sm" href="https://github.com/kartik-h6/PMAS" target="_blank" rel="noopener">Repository</a>
             </p>
           </article>
 
           <article class="card card--hover card--feature reveal reveal--d2">
-            <p class="card__meta">EdTech · Live platform</p>
+            <p class="card__meta">EdTech · Archived</p>
             <h3>TechStudyHubCore</h3>
-            <p>A gateway of focused tools for pharmacy and nursing students rather than another content platform. A CGPA/SGPA calculator built on the official PCI 2026 B.Pharm syllabus, a career navigator, and a gateway linking the SSLC Hub, Pharmacy Hub and Digital Setup ecosystems.</p>
+            <p>An independent, solo-built learning ecosystem for pharmacy, nursing and school-level students, built on one idea: <strong>information is not the same as understanding</strong>. It grew into a root gateway, a structured B.Pharm learning architecture, SSLC content, a CGPA calculator on the official PCI 2026 syllabus, and a career navigator.</p>
+            <p>It is now being retired. As one person alongside M.Pharm and PMAS, the ecosystem became too broad to maintain responsibly — a team was hoped for but never formed. Rather than let it rot, the engineering record has been archived so the reasoning survives the domain.</p>
             <div class="pills">
-              <span class="pill pill--live">Live</span><span class="pill">Kannada-first</span><span class="pill">AI-assisted</span>
+              <span class="pill">Archived</span><span class="pill">Solo-built</span><span class="pill">Kannada-first</span><span class="pill">AI-assisted</span>
             </div>
             <p class="hero__actions">
-              <a class="btn btn--sm btn--primary" href="https://techstudyhubcore.in" target="_blank" rel="noopener">Visit platform</a>
+              <a class="btn btn--sm btn--primary" href="https://github.com/kartik-h6/techstudyhubcore-archive" target="_blank" rel="noopener">Read the archive</a>
               <a class="btn btn--sm" href="https://github.com/kartik-h6/SGPA-CGPA-CALCULATOR" target="_blank" rel="noopener">Calculator repo</a>
             </p>
           </article>
 
-          <article class="card card--hover reveal reveal--d1">
-            <p class="card__meta">Web · Independent build</p>
-            <h3>This portfolio platform</h3>
-            <p>Hand-built and deployed: a multi-page static site with a full light/dark theme system, an SVG brand system, structured data, and a custom diagnostic 404. Built by directing LLM models through idea, plan, design, build and deployment.</p>
+          <article class="card card--hover card--feature reveal reveal--d1">
+            <p class="card__meta">Research · B.Pharm final-year thesis</p>
+            <h3>Telepharmacy — comparative literature review</h3>
+            <p>My final-year dissertation, carried out individually from start to finish: literature search and screening, evidence synthesis, writing and presentation. It compared remote and face-to-face pharmacy counselling.</p>
+            <p>Satisfaction came out high in both models — but trust and emotional reassurance still leaned toward in-person care. That gap is what made the project interesting: it reframes the question from <em>which model wins</em> to <em>which mode suits this patient at this point in the journey</em>.</p>
             <div class="pills">
-              <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">GitHub Pages</span>
+              <span class="pill">Literature review</span><span class="pill">RGUHS 2025</span><span class="pill">Individual work</span>
             </div>
-            <p class="mt-l"><a class="btn btn--sm" href="https://github.com/kartik-h6/Portfolio" target="_blank" rel="noopener">Repository</a></p>
+            <p class="mt-l"><a class="btn btn--sm" href="research.html">Read the work</a></p>
           </article>
 
-          <article class="card card--hover reveal reveal--d2">
-            <p class="card__meta">Digital services</p>
+          <article class="card card--hover card--feature reveal reveal--d2">
+            <p class="card__meta">Freelance · Digital infrastructure</p>
             <h3>Digital Setup</h3>
-            <p>Websites and digital systems built for local businesses — the commercial arm that funds the free student tools on TechStudyHubCore. Landing pages, structured content and no-code automation.</p>
+            <p>Freelance work building local businesses a digital presence they actually own — a landing page, WhatsApp contact, Google and maps presence, and the local search basics that make a business findable.</p>
+            <p>The proposition is deliberately not software. Instead of an expensive subscription with a recurring monthly bill, it is a <strong>one-time build</strong> the owner keeps and maintains on their own domain. The work is sold as an outcome — enquiries, trust, visibility — rather than as a website.</p>
             <div class="pills">
-              <span class="pill">Landing pages</span><span class="pill">Automation</span><span class="pill">SMEs</span>
+              <span class="pill">Freelance</span><span class="pill">One-time build</span><span class="pill">No recurring fees</span><span class="pill">Local businesses</span>
             </div>
             <p class="mt-l"><a class="btn btn--sm" href="https://github.com/kartik-h6/digital-setup" target="_blank" rel="noopener">Repository</a></p>
           </article>
